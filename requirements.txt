@@ -6,6 +6,6 @@ trl>=0.9
 bitsandbytes>=0.43
 torch>=2.1.0
 pdfplumber 
-pymupdf 
 openpyxl
 PyPDF2
+PyMuPDF

@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Homepage from './pages/Homepage';
+import Chat from './components/Chat';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isChatMinimized, setIsChatMinimized] = useState(false);
+
+  const handleOpenChat = () => {
+    setIsChatOpen(true);
+    setIsChatMinimized(false);
+  };
+
+  const handleCloseChat = () => {
+    setIsChatOpen(false);
+    setIsChatMinimized(false);
+  };
+
+  const handleMinimizeChat = () => {
+    setIsChatMinimized(!isChatMinimized);
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Homepage onOpenChat={handleOpenChat} />
+      <Chat
+        isOpen={isChatOpen}
+        onClose={handleCloseChat}
+        onMinimize={handleMinimizeChat}
+        isMinimized={isChatMinimized}
+      />
     </div>
   );
 }

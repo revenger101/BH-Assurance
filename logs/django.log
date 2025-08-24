@@ -1,0 +1,5 @@
+INFO 2025-08-24 10:57:02,625 modeling 19096 2016 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 10:57:25,486 big_modeling 19096 2016 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 10:57:44,102 modeling 11492 11488 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 10:58:05,421 big_modeling 11492 11488 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 10:58:30,512 modeling 17776 780 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).

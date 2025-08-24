@@ -1,0 +1,9 @@
+{
+  "total_examples": 1725,
+  "mapping_file_rows": 108,
+  "guarantees_file_rows": 910,
+  "files_processed": [
+    "Mapping produits vs profils_cibles.xlsx",
+    "Description_garanties.xlsx"
+  ]
+}

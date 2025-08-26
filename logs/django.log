@@ -3,3 +3,807 @@ WARNING 2025-08-24 10:57:25,486 big_modeling 19096 2016 Some parameters are on t
 INFO 2025-08-24 10:57:44,102 modeling 11492 11488 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
 WARNING 2025-08-24 10:58:05,421 big_modeling 11492 11488 Some parameters are on the meta device because they were offloaded to the cpu.
 INFO 2025-08-24 10:58:30,512 modeling 17776 780 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+INFO 2025-08-24 11:15:59,611 autoreload 19948 13580 Watching for file changes with StatReloader
+INFO 2025-08-24 11:16:09,631 modeling 19948 13580 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:16:30,689 big_modeling 19948 13580 Some parameters are on the meta device because they were offloaded to the cpu.
+WARNING 2025-08-24 11:18:03,424 log 19948 3992 Not Found: /
+WARNING 2025-08-24 11:18:03,425 basehttp 19948 3992 "GET / HTTP/1.1" 404 2457
+WARNING 2025-08-24 11:18:03,437 log 19948 19976 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:03,438 basehttp 19948 19976 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:05,471 log 19948 7256 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:05,472 basehttp 19948 7256 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:07,487 log 19948 18248 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:07,493 basehttp 19948 18248 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:09,515 log 19948 7056 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:09,516 basehttp 19948 7056 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:11,534 log 19948 20124 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:11,534 basehttp 19948 20124 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:13,556 log 19948 8736 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:13,557 basehttp 19948 8736 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:15,576 log 19948 19364 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:15,577 basehttp 19948 19364 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:17,597 log 19948 16908 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:17,598 basehttp 19948 16908 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:19,624 log 19948 19888 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:19,625 basehttp 19948 19888 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:21,651 log 19948 17460 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:21,652 basehttp 19948 17460 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:23,660 log 19948 16444 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:23,661 basehttp 19948 16444 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:25,686 log 19948 14972 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:25,687 basehttp 19948 14972 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:27,706 log 19948 15012 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:27,707 basehttp 19948 15012 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:29,727 log 19948 16548 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:29,727 basehttp 19948 16548 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:31,737 log 19948 17608 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:31,737 basehttp 19948 17608 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:33,768 log 19948 20276 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:33,769 basehttp 19948 20276 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:35,794 log 19948 2216 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:35,795 basehttp 19948 2216 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:37,814 log 19948 19684 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:37,815 basehttp 19948 19684 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:39,841 log 19948 14948 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:39,843 basehttp 19948 14948 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:41,867 log 19948 17928 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:41,868 basehttp 19948 17928 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:43,879 log 19948 19480 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:43,880 basehttp 19948 19480 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:45,908 log 19948 9320 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:45,908 basehttp 19948 9320 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:18:47,936 log 19948 17172 Not Found: /api/chat/chat/
+WARNING 2025-08-24 11:18:47,937 basehttp 19948 17172 "POST /api/chat/chat/ HTTP/1.1" 404 2626
+WARNING 2025-08-24 11:19:20,670 log 19948 19024 Not Found: /
+WARNING 2025-08-24 11:19:20,671 basehttp 19948 19024 "GET / HTTP/1.1" 404 2457
+WARNING 2025-08-24 11:19:20,677 log 19948 16568 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:20,678 basehttp 19948 16568 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:22,704 log 19948 3752 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:22,705 basehttp 19948 3752 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:24,720 log 19948 12828 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:24,720 basehttp 19948 12828 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:26,735 log 19948 5128 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:26,736 basehttp 19948 5128 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:28,741 log 19948 18208 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:28,742 basehttp 19948 18208 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:30,759 log 19948 18704 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:30,760 basehttp 19948 18704 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:32,763 log 19948 18468 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:32,764 basehttp 19948 18468 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:34,777 log 19948 19676 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:34,778 basehttp 19948 19676 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:36,800 log 19948 14836 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:36,801 basehttp 19948 14836 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:38,823 log 19948 7776 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:38,824 basehttp 19948 7776 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:40,843 log 19948 19488 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:40,844 basehttp 19948 19488 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:42,862 log 19948 11488 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:42,862 basehttp 19948 11488 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:44,877 log 19948 14120 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:44,878 basehttp 19948 14120 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:46,892 log 19948 19504 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:46,893 basehttp 19948 19504 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:48,915 log 19948 11464 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:48,917 basehttp 19948 11464 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:50,940 log 19948 2036 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:50,942 basehttp 19948 2036 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:52,969 log 19948 13936 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:52,970 basehttp 19948 13936 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:54,990 log 19948 6692 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:54,990 basehttp 19948 6692 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:57,021 log 19948 16684 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:57,025 basehttp 19948 16684 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:19:59,049 log 19948 6004 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:19:59,050 basehttp 19948 6004 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:20:01,066 log 19948 18968 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:20:01,067 basehttp 19948 18968 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:20:03,092 log 19948 18256 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:20:03,092 basehttp 19948 18256 "POST /api/chat/ HTTP/1.1" 401 58
+WARNING 2025-08-24 11:20:05,119 log 19948 16900 Unauthorized: /api/chat/
+WARNING 2025-08-24 11:20:05,120 basehttp 19948 16900 "POST /api/chat/ HTTP/1.1" 401 58
+INFO 2025-08-24 11:20:22,971 autoreload 19948 13580 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 11:20:26,512 autoreload 18936 13756 Watching for file changes with StatReloader
+INFO 2025-08-24 11:20:35,905 modeling 18936 13756 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:20:57,337 big_modeling 18936 13756 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:21:45,573 modeling 19576 18036 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:22:16,327 big_modeling 19576 18036 Some parameters are on the meta device because they were offloaded to the cpu and disk.
+INFO 2025-08-24 11:23:43,805 basehttp 18936 4748 "POST /api/chat/ HTTP/1.1" 200 122
+ERROR 2025-08-24 11:26:52,490 log 18936 7428 Internal Server Error: /api/chat/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\chat\views.py", line 12, in post
+    response_text = chat_completion(prompt)
+  File "C:\Users\USER\Desktop\bhagent\chat\mistral_client.py", line 16, in chat_completion
+    output = model.generate(
+        **inputs,
+    ...<3 lines>...
+        top_p=0.9
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2629, in generate
+    result = self._sample(
+        input_ids,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 3613, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 959, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 434, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 1083, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 364, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 226, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 199, in forward
+    return self.weight * hidden_states.to(input_dtype)
+           ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 308, in _fn
+    result = fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_compile.py", line 51, in inner
+    return disable_fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 149, in _fn
+    result = fn(**bound.arguments)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1086, in _ref
+    output = prim(a, b)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1693, in mul
+    return prims.mul(a, b)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_ops.py", line 756, in __call__
+    return self._op(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\fake_impl.py", line 95, in meta_kernel
+    return fake_impl_holder.kernel(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\utils.py", line 32, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\library.py", line 1388, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\custom_ops.py", line 622, in fake_impl
+    return self._abstract_fn(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims\__init__.py", line 404, in _prim_elementwise_meta
+    utils.check_same_device(*args_, allow_cpu_scalar_tensors=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\__init__.py", line 779, in check_same_device
+    raise RuntimeError(msg)
+RuntimeError: Tensor on device cuda:0 is not on the expected device meta!
+INFO 2025-08-24 11:26:52,517 basehttp 18936 7428 - Broken pipe from ('127.0.0.1', 54818)
+ERROR 2025-08-24 11:28:05,930 log 18936 5056 Internal Server Error: /api/chat/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\chat\views.py", line 12, in post
+    response_text = chat_completion(prompt)
+  File "C:\Users\USER\Desktop\bhagent\chat\mistral_client.py", line 16, in chat_completion
+    output = model.generate(
+        **inputs,
+    ...<3 lines>...
+        top_p=0.9
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2629, in generate
+    result = self._sample(
+        input_ids,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 3613, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 959, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 434, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 1083, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 364, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 226, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 199, in forward
+    return self.weight * hidden_states.to(input_dtype)
+           ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 308, in _fn
+    result = fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_compile.py", line 51, in inner
+    return disable_fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 149, in _fn
+    result = fn(**bound.arguments)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1086, in _ref
+    output = prim(a, b)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1693, in mul
+    return prims.mul(a, b)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_ops.py", line 756, in __call__
+    return self._op(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\fake_impl.py", line 95, in meta_kernel
+    return fake_impl_holder.kernel(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\utils.py", line 32, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\library.py", line 1383, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\custom_ops.py", line 622, in fake_impl
+    return self._abstract_fn(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims\__init__.py", line 404, in _prim_elementwise_meta
+    utils.check_same_device(*args_, allow_cpu_scalar_tensors=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\__init__.py", line 779, in check_same_device
+    raise RuntimeError(msg)
+RuntimeError: Tensor on device cuda:0 is not on the expected device meta!
+INFO 2025-08-24 11:28:05,939 basehttp 18936 5056 - Broken pipe from ('127.0.0.1', 54848)
+ERROR 2025-08-24 11:28:49,646 log 18936 11888 Internal Server Error: /api/chat/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\chat\views.py", line 12, in post
+    response_text = chat_completion(prompt)
+  File "C:\Users\USER\Desktop\bhagent\chat\mistral_client.py", line 16, in chat_completion
+    output = model.generate(
+        **inputs,
+    ...<3 lines>...
+        top_p=0.9
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2629, in generate
+    result = self._sample(
+        input_ids,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 3610, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 959, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 434, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 1083, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 364, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 242, in forward
+    hidden_states = self.post_attention_layernorm(hidden_states)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 199, in forward
+    return self.weight * hidden_states.to(input_dtype)
+           ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 308, in _fn
+    result = fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_compile.py", line 51, in inner
+    return disable_fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 149, in _fn
+    result = fn(**bound.arguments)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1086, in _ref
+    output = prim(a, b)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1693, in mul
+    return prims.mul(a, b)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_ops.py", line 756, in __call__
+    return self._op(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\fake_impl.py", line 95, in meta_kernel
+    return fake_impl_holder.kernel(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\utils.py", line 32, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\library.py", line 1383, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\custom_ops.py", line 622, in fake_impl
+    return self._abstract_fn(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims\__init__.py", line 404, in _prim_elementwise_meta
+    utils.check_same_device(*args_, allow_cpu_scalar_tensors=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\__init__.py", line 779, in check_same_device
+    raise RuntimeError(msg)
+RuntimeError: Tensor on device cuda:0 is not on the expected device meta!
+ERROR 2025-08-24 11:28:49,651 basehttp 18936 11888 "POST /api/chat/ HTTP/1.1" 500 360317
+ERROR 2025-08-24 11:28:51,987 log 18936 7180 Internal Server Error: /api/chat/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\chat\views.py", line 12, in post
+    response_text = chat_completion(prompt)
+  File "C:\Users\USER\Desktop\bhagent\chat\mistral_client.py", line 16, in chat_completion
+    output = model.generate(
+        **inputs,
+    ...<3 lines>...
+        top_p=0.9
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2629, in generate
+    result = self._sample(
+        input_ids,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 3613, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 959, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 434, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 1083, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 364, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 242, in forward
+    hidden_states = self.post_attention_layernorm(hidden_states)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\transformers\models\mistral\modeling_mistral.py", line 199, in forward
+    return self.weight * hidden_states.to(input_dtype)
+           ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 308, in _fn
+    result = fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_compile.py", line 51, in inner
+    return disable_fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\wrappers.py", line 149, in _fn
+    result = fn(**bound.arguments)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1086, in _ref
+    output = prim(a, b)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_refs\__init__.py", line 1693, in mul
+    return prims.mul(a, b)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_ops.py", line 756, in __call__
+    return self._op(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\fake_impl.py", line 95, in meta_kernel
+    return fake_impl_holder.kernel(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\utils.py", line 32, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\library.py", line 1383, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_library\custom_ops.py", line 622, in fake_impl
+    return self._abstract_fn(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims\__init__.py", line 404, in _prim_elementwise_meta
+    utils.check_same_device(*args_, allow_cpu_scalar_tensors=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\torch\_prims_common\__init__.py", line 779, in check_same_device
+    raise RuntimeError(msg)
+RuntimeError: Tensor on device cuda:0 is not on the expected device meta!
+INFO 2025-08-24 11:28:51,996 basehttp 18936 7180 - Broken pipe from ('127.0.0.1', 54897)
+INFO 2025-08-24 11:30:12,188 modeling 17308 17768 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:30:31,911 big_modeling 17308 17768 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:30:49,734 modeling 19336 15024 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:31:08,449 big_modeling 19336 15024 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:31:26,749 modeling 18400 20012 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:31:45,156 big_modeling 18400 20012 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:32:01,641 modeling 19840 3296 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:32:21,272 big_modeling 19840 3296 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:34:29,066 modeling 5024 12872 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:34:47,485 big_modeling 5024 12872 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:35:07,511 modeling 13288 18700 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:35:28,119 big_modeling 13288 18700 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:35:50,232 modeling 17596 17720 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:36:09,017 big_modeling 17596 17720 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 11:39:15,969 autoreload 18064 18752 Watching for file changes with StatReloader
+INFO 2025-08-24 11:39:23,466 modeling 18064 18752 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 11:39:41,868 big_modeling 18064 18752 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 13:37:18,568 autoreload 9188 19696 Watching for file changes with StatReloader
+INFO 2025-08-24 13:37:27,508 modeling 9188 19696 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 13:37:46,542 big_modeling 9188 19696 Some parameters are on the meta device because they were offloaded to the cpu.
+WARNING 2025-08-24 13:38:01,867 log 9188 1564 Not Found: /
+WARNING 2025-08-24 13:38:01,868 basehttp 9188 1564 "GET / HTTP/1.1" 404 2457
+WARNING 2025-08-24 13:38:02,377 log 9188 1564 Not Found: /favicon.ico
+WARNING 2025-08-24 13:38:02,378 basehttp 9188 1564 "GET /favicon.ico HTTP/1.1" 404 2508
+WARNING 2025-08-24 13:38:10,198 log 9188 4032 Not Found: /api/auth/
+WARNING 2025-08-24 13:38:10,200 basehttp 9188 4032 "GET /api/auth/ HTTP/1.1" 404 5555
+INFO 2025-08-24 13:38:21,786 basehttp 9188 4032 "GET /api/auth/register HTTP/1.1" 301 0
+WARNING 2025-08-24 13:38:21,797 log 9188 9768 Method Not Allowed: /api/auth/register/
+WARNING 2025-08-24 13:38:21,798 basehttp 9188 9768 "GET /api/auth/register/ HTTP/1.1" 405 40
+WARNING 2025-08-24 13:38:40,213 log 9188 9768 Method Not Allowed: /api/auth/login/
+WARNING 2025-08-24 13:38:40,214 basehttp 9188 9768 "GET /api/auth/login/ HTTP/1.1" 405 40
+INFO 2025-08-24 13:41:52,361 autoreload 3176 4760 Watching for file changes with StatReloader
+INFO 2025-08-24 13:41:58,651 modeling 3176 4760 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 13:42:18,474 big_modeling 3176 4760 Some parameters are on the meta device because they were offloaded to the cpu and disk.
+INFO 2025-08-24 13:43:23,693 autoreload 3176 4760 C:\Users\USER\Desktop\bhagent\authentication\views.py changed, reloading.
+INFO 2025-08-24 13:43:26,353 autoreload 8448 10504 Watching for file changes with StatReloader
+INFO 2025-08-24 13:43:36,594 modeling 8448 10504 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 13:43:57,532 big_modeling 8448 10504 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 13:44:13,561 autoreload 8448 10504 C:\Users\USER\Desktop\bhagent\authentication\views.py changed, reloading.
+INFO 2025-08-24 13:44:15,810 autoreload 9060 18500 Watching for file changes with StatReloader
+INFO 2025-08-24 13:44:23,845 modeling 9060 18500 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 13:44:44,054 big_modeling 9060 18500 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 13:44:46,973 autoreload 9060 18500 C:\Users\USER\Desktop\bhagent\authentication\views.py changed, reloading.
+INFO 2025-08-24 13:44:49,132 autoreload 13136 9456 Watching for file changes with StatReloader
+INFO 2025-08-24 13:44:57,643 modeling 13136 9456 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 13:45:17,224 big_modeling 13136 9456 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 13:45:26,242 autoreload 13136 9456 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-24 13:45:28,442 autoreload 1628 5736 Watching for file changes with StatReloader
+INFO 2025-08-24 13:45:36,166 modeling 1628 5736 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 13:45:56,429 big_modeling 1628 5736 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 13:48:18,787 basehttp 1628 3632 "POST /api/auth/register/ HTTP/1.1" 201 371
+INFO 2025-08-24 13:48:19,189 basehttp 1628 5708 "POST /api/auth/login/ HTTP/1.1" 200 359
+INFO 2025-08-24 13:49:16,203 basehttp 1628 13112 "POST /api/chat/ HTTP/1.1" 200 177
+INFO 2025-08-24 13:49:16,251 basehttp 1628 19696 "GET /api/auth/profile/ HTTP/1.1" 200 270
+WARNING 2025-08-24 13:49:35,359 log 1628 11512 Not Found: /api/auth
+WARNING 2025-08-24 13:49:35,361 basehttp 1628 11512 "GET /api/auth HTTP/1.1" 404 2607
+WARNING 2025-08-24 13:49:43,416 log 1628 11512 Not Found: /api
+WARNING 2025-08-24 13:49:43,418 basehttp 1628 11512 "GET /api HTTP/1.1" 404 2484
+WARNING 2025-08-24 13:49:53,859 log 1628 11512 Not Found: /
+WARNING 2025-08-24 13:49:53,861 basehttp 1628 11512 "GET / HTTP/1.1" 404 2457
+WARNING 2025-08-24 13:50:11,314 log 1628 11512 Not Found: /api/auth/
+WARNING 2025-08-24 13:50:11,315 basehttp 1628 11512 "GET /api/auth/ HTTP/1.1" 404 5555
+WARNING 2025-08-24 13:50:19,754 log 1628 11512 Method Not Allowed: /api/auth/register/
+WARNING 2025-08-24 13:50:19,755 basehttp 1628 11512 "GET /api/auth/register/ HTTP/1.1" 405 40
+INFO 2025-08-24 13:52:24,221 basehttp 1628 16280 "POST /api/chat/ HTTP/1.1" 200 123
+INFO 2025-08-24 13:57:50,044 basehttp 1628 14116 "POST /api/chat/ HTTP/1.1" 200 558
+INFO 2025-08-24 14:00:52,451 autoreload 1628 5736 C:\Users\USER\Desktop\bhagent\chat\mistral_client.py changed, reloading.
+INFO 2025-08-24 14:00:57,718 autoreload 20104 10840 Watching for file changes with StatReloader
+INFO 2025-08-24 14:01:38,480 autoreload 20104 10840 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 14:01:40,493 autoreload 15728 12436 Watching for file changes with StatReloader
+INFO 2025-08-24 14:01:53,889 autoreload 15728 12436 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 14:01:55,447 autoreload 6856 16540 Watching for file changes with StatReloader
+INFO 2025-08-24 14:03:43,497 views 6856 7088 Chat request: Bonjour...
+INFO 2025-08-24 14:03:48,977 modeling 6856 7088 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:04:10,275 big_modeling 6856 7088 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:04:13,349 modeling 6856 7088 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+INFO 2025-08-24 14:04:14,198 modeling 6856 7088 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:04:34,310 big_modeling 6856 7088 Some parameters are on the meta device because they were offloaded to the disk and cpu.
+INFO 2025-08-24 14:04:44,632 views 6856 11060 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:05:42,178 views 6856 11120 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:05:45,577 views 6856 9088 Chat request: Quels sont les profils cibles pour le produit TEMP...
+INFO 2025-08-24 14:05:51,888 views 6856 7088 Response generated in 128.39s
+INFO 2025-08-24 14:05:51,921 basehttp 6856 7088 - Broken pipe from ('127.0.0.1', 58378)
+INFO 2025-08-24 14:06:46,604 views 6856 4440 Chat request: Que couvre la garantie DECES?...
+INFO 2025-08-24 14:07:47,612 views 6856 8608 Chat request: Comment choisir une assurance pour une entreprise?...
+INFO 2025-08-24 14:08:10,353 autoreload 3012 15000 Watching for file changes with StatReloader
+INFO 2025-08-24 14:08:17,306 views 3012 17476 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:08:18,377 modeling 3012 17476 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:08:35,917 big_modeling 3012 17476 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:08:36,758 modeling 3012 17476 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+INFO 2025-08-24 14:08:37,532 modeling 3012 17476 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:08:57,932 big_modeling 3012 17476 Some parameters are on the meta device because they were offloaded to the disk and cpu.
+INFO 2025-08-24 14:09:08,946 autoreload 3012 15000 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 14:09:16,215 autoreload 5940 5588 Watching for file changes with StatReloader
+INFO 2025-08-24 14:09:30,008 autoreload 5940 5588 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 14:09:31,696 autoreload 12368 18320 Watching for file changes with StatReloader
+INFO 2025-08-24 14:09:51,654 autoreload 12368 18320 C:\Users\USER\Desktop\bhagent\chat\mistral_client.py changed, reloading.
+INFO 2025-08-24 14:09:53,320 autoreload 13332 16340 Watching for file changes with StatReloader
+INFO 2025-08-24 14:10:08,895 views 13332 1908 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:10:08,896 mistral_client 13332 1908 Loading optimized model for faster inference...
+INFO 2025-08-24 14:10:09,758 autoreload 6664 10412 Watching for file changes with StatReloader
+INFO 2025-08-24 14:10:10,070 modeling 13332 1908 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+INFO 2025-08-24 14:10:23,564 autoreload 18168 1948 Watching for file changes with StatReloader
+INFO 2025-08-24 14:10:35,909 views 18168 16296 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:10:35,910 mistral_client 18168 16296 Loading optimized model for faster inference...
+INFO 2025-08-24 14:10:38,883 modeling 18168 16296 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:11:01,531 big_modeling 18168 16296 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:11:03,373 modeling 18168 16296 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+ERROR 2025-08-24 14:11:03,429 mistral_client 18168 16296 Error loading model: We need an `offload_dir` to dispatch this model according to this `device_map`, the following submodules need to be offloaded: base_model.model.model.layers.13, base_model.model.model.layers.14, base_model.model.model.layers.15, base_model.model.model.layers.16, base_model.model.model.layers.17, base_model.model.model.layers.18, base_model.model.model.layers.19, base_model.model.model.layers.20, base_model.model.model.layers.21, base_model.model.model.layers.22, base_model.model.model.layers.23, base_model.model.model.layers.24, base_model.model.model.layers.25, base_model.model.model.layers.26, base_model.model.model.layers.27, base_model.model.model.layers.28, base_model.model.model.layers.29, base_model.model.model.layers.30, base_model.model.model.layers.31, base_model.model.model.norm, base_model.model.model.rotary_emb, base_model.model.lm_head.
+INFO 2025-08-24 14:11:08,771 modeling 18168 16296 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:11:29,488 big_modeling 18168 16296 Some parameters are on the meta device because they were offloaded to the cpu and disk.
+INFO 2025-08-24 14:21:05,156 views 18168 13896 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:23:31,016 autoreload 9108 6380 Watching for file changes with StatReloader
+INFO 2025-08-24 14:24:02,292 views 9108 17064 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 14:24:02,293 mistral_client 9108 17064 Loading optimized model for faster inference...
+INFO 2025-08-24 14:24:07,045 modeling 9108 17064 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:24:30,663 big_modeling 9108 17064 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:24:33,247 modeling 9108 17064 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+ERROR 2025-08-24 14:24:33,412 mistral_client 9108 17064 Error loading model: We need an `offload_dir` to dispatch this model according to this `device_map`, the following submodules need to be offloaded: base_model.model.model.layers.11, base_model.model.model.layers.12, base_model.model.model.layers.13, base_model.model.model.layers.14, base_model.model.model.layers.15, base_model.model.model.layers.16, base_model.model.model.layers.17, base_model.model.model.layers.18, base_model.model.model.layers.19, base_model.model.model.layers.20, base_model.model.model.layers.21, base_model.model.model.layers.22, base_model.model.model.layers.23, base_model.model.model.layers.24, base_model.model.model.layers.25, base_model.model.model.layers.26, base_model.model.model.layers.27, base_model.model.model.layers.28, base_model.model.model.layers.29, base_model.model.model.layers.30, base_model.model.model.layers.31, base_model.model.model.norm, base_model.model.model.rotary_emb, base_model.model.lm_head.
+INFO 2025-08-24 14:24:34,251 modeling 9108 17064 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:24:55,422 big_modeling 9108 17064 Some parameters are on the meta device because they were offloaded to the cpu and disk.
+INFO 2025-08-24 14:32:29,068 mistral_client 9108 17064 Response generated in 506.77 seconds
+INFO 2025-08-24 14:32:29,069 views 9108 17064 Response generated in 506.78s
+INFO 2025-08-24 14:32:29,139 basehttp 9108 17064 "POST /api/chat/ HTTP/1.1" 200 86
+INFO 2025-08-24 14:32:31,885 autoreload 9108 6380 C:\Users\USER\Desktop\bhagent\chat\mistral_client.py changed, reloading.
+INFO 2025-08-24 14:32:38,169 autoreload 14716 10680 Watching for file changes with StatReloader
+INFO 2025-08-24 14:33:05,929 autoreload 14716 10680 C:\Users\USER\Desktop\bhagent\chat\mistral_client.py changed, reloading.
+INFO 2025-08-24 14:33:07,507 autoreload 18648 9120 Watching for file changes with StatReloader
+INFO 2025-08-24 14:33:48,763 autoreload 18648 9120 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 14:33:50,351 autoreload 9736 17464 Watching for file changes with StatReloader
+INFO 2025-08-24 14:34:10,295 autoreload 16148 10664 Watching for file changes with StatReloader
+INFO 2025-08-24 14:36:24,654 views 16148 2484 Chat request: Bonjour...
+INFO 2025-08-24 14:36:24,654 mistral_client 16148 2484 Loading model with memory optimization...
+INFO 2025-08-24 14:36:25,360 mistral_client 16148 2484 Attempting to load trained model...
+WARNING 2025-08-24 14:36:48,300 big_modeling 16148 2484 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:36:49,940 modeling 16148 2484 Based on the current allocation process, no modules could be assigned to the following devices due to insufficient memory:
+  - 0: 700071936 bytes required
+These minimum requirements are specific to this allocation attempt and may vary. Consider increasing the available memory for these devices to at least the specified minimum, or adjusting the model config.
+WARNING 2025-08-24 14:36:49,947 mistral_client 16148 2484 Could not load trained model: We need an `offload_dir` to dispatch this model according to this `device_map`, the following submodules need to be offloaded: base_model.model.model.layers.14, base_model.model.model.layers.15, base_model.model.model.layers.16, base_model.model.model.layers.17, base_model.model.model.layers.18, base_model.model.model.layers.19, base_model.model.model.layers.20, base_model.model.model.layers.21, base_model.model.model.layers.22, base_model.model.model.layers.23, base_model.model.model.layers.24, base_model.model.model.layers.25, base_model.model.model.layers.26, base_model.model.model.layers.27, base_model.model.model.layers.28, base_model.model.model.layers.29, base_model.model.model.layers.30, base_model.model.model.layers.31, base_model.model.model.norm, base_model.model.model.rotary_emb, base_model.model.lm_head.
+WARNING 2025-08-24 14:37:27,635 big_modeling 16148 2484 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:37:27,698 mistral_client 16148 2484 Model loaded in 63.04 seconds
+INFO 2025-08-24 14:39:01,565 autoreload 16148 10664 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-24 14:39:07,002 autoreload 19872 7536 Watching for file changes with StatReloader
+INFO 2025-08-24 14:39:14,028 views 19872 7536 Using simple mistral client for better performance
+INFO 2025-08-24 14:39:27,093 autoreload 19872 7536 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-24 14:39:28,095 autoreload 5412 13064 Watching for file changes with StatReloader
+INFO 2025-08-24 14:39:32,070 views 5412 13064 Using simple mistral client for better performance
+INFO 2025-08-24 14:39:39,902 autoreload 5412 13064 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-24 14:39:40,972 autoreload 16036 6156 Watching for file changes with StatReloader
+INFO 2025-08-24 14:39:45,269 views 16036 6156 Using simple mistral client for better performance
+INFO 2025-08-24 14:39:53,220 autoreload 16036 6156 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-24 14:39:54,244 autoreload 1520 1240 Watching for file changes with StatReloader
+INFO 2025-08-24 14:39:58,145 views 1520 1240 Using simple mistral client for better performance
+INFO 2025-08-24 14:40:03,933 autoreload 1520 1240 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-24 14:40:04,916 autoreload 16628 12868 Watching for file changes with StatReloader
+INFO 2025-08-24 14:40:08,889 views 16628 12868 Using simple mistral client for better performance
+INFO 2025-08-24 14:40:24,378 views 16628 14372 Chat request: Bonjour...
+INFO 2025-08-24 14:40:26,989 modeling 16628 14372 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-24 14:40:48,001 big_modeling 16628 14372 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-24 14:41:32,776 views 16628 14372 Response generated in 68.40s
+INFO 2025-08-24 14:41:32,779 basehttp 16628 14372 "POST /api/chat/ HTTP/1.1" 200 84
+INFO 2025-08-24 14:41:49,363 views 16628 7480 Chat request: Que contient le document ASSURANCE BRIS DE GLACES?...
+INFO 2025-08-24 14:44:47,840 views 16628 7480 Response generated in 178.48s
+INFO 2025-08-24 14:44:47,843 basehttp 16628 7480 "POST /api/chat/ HTTP/1.1" 200 281
+INFO 2025-08-24 15:06:21,954 views 16628 9152 Chat request: À quelle branche appartient le produit ASSURANCE M...
+INFO 2025-08-24 15:08:14,684 views 16628 9152 Response generated in 112.73s
+INFO 2025-08-24 15:08:14,687 basehttp 16628 9152 "POST /api/chat/ HTTP/1.1" 200 123
+INFO 2025-08-24 15:08:34,377 views 16628 18588 Chat request: À quelle branche appartient le produit ASSURANCE M...
+INFO 2025-08-24 15:08:34,384 views 16628 18588 Response generated in 0.01s
+INFO 2025-08-24 15:08:34,386 basehttp 16628 18588 "POST /api/chat/ HTTP/1.1" 200 121
+INFO 2025-08-24 15:08:44,955 views 16628 18588 Chat request: Que contient le document ASSURANCE BRIS DE GLACES?...
+INFO 2025-08-24 15:08:44,960 views 16628 18588 Response generated in 0.00s
+INFO 2025-08-24 15:08:44,961 basehttp 16628 18588 "POST /api/chat/ HTTP/1.1" 200 278
+INFO 2025-08-24 15:08:55,454 views 16628 18588 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:11:59,432 views 16628 18588 Response generated in 183.98s
+INFO 2025-08-24 15:11:59,433 basehttp 16628 18588 "POST /api/chat/ HTTP/1.1" 200 249
+INFO 2025-08-24 15:38:20,384 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:38:20,391 views 16628 4240 Response generated in 0.01s
+INFO 2025-08-24 15:38:20,393 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 247
+INFO 2025-08-24 15:38:22,803 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:38:22,807 views 16628 4240 Response generated in 0.00s
+INFO 2025-08-24 15:38:22,808 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 246
+INFO 2025-08-24 15:38:24,041 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:38:24,044 views 16628 4240 Response generated in 0.00s
+INFO 2025-08-24 15:38:24,045 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 246
+INFO 2025-08-24 15:38:26,662 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:38:26,668 views 16628 4240 Response generated in 0.01s
+INFO 2025-08-24 15:38:26,669 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 247
+INFO 2025-08-24 15:38:27,847 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:38:27,852 views 16628 4240 Response generated in 0.00s
+INFO 2025-08-24 15:38:27,852 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 246
+INFO 2025-08-24 15:38:28,965 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
+INFO 2025-08-24 15:38:28,969 views 16628 4240 Response generated in 0.00s
+INFO 2025-08-24 15:38:28,970 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 246

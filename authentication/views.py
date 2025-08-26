@@ -7,6 +7,8 @@ from django.contrib.sessions.models import Session
 from django.utils import timezone
 from datetime import timedelta
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 import uuid
 
 from .models import CustomUser, UserSession, PasswordResetToken, EmailVerificationToken
@@ -22,6 +24,7 @@ from .serializers import (
 from .utils import get_client_ip, send_verification_email, send_password_reset_email
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 def register_user(request):
@@ -66,6 +69,7 @@ def register_user(request):
     }, status=status.HTTP_400_BAD_REQUEST)
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 def login_user(request):
@@ -117,6 +121,7 @@ def login_user(request):
     }, status=status.HTTP_400_BAD_REQUEST)
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([permissions.IsAuthenticated])
 def logout_user(request):
@@ -183,6 +188,7 @@ def update_user_profile(request):
     }, status=status.HTTP_400_BAD_REQUEST)
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([permissions.IsAuthenticated])
 def change_password(request):
@@ -212,6 +218,7 @@ def change_password(request):
     }, status=status.HTTP_400_BAD_REQUEST)
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 def request_password_reset(request):
@@ -244,6 +251,7 @@ def request_password_reset(request):
     }, status=status.HTTP_400_BAD_REQUEST)
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 def confirm_password_reset(request):

@@ -807,3 +807,70 @@ INFO 2025-08-24 15:38:27,852 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 
 INFO 2025-08-24 15:38:28,965 views 16628 4240 Chat request: Quelle est l'activité de la société Societe_000001...
 INFO 2025-08-24 15:38:28,969 views 16628 4240 Response generated in 0.00s
 INFO 2025-08-24 15:38:28,970 basehttp 16628 4240 "POST /api/chat/ HTTP/1.1" 200 246
+INFO 2025-08-26 23:48:13,866 autoreload 19608 19604 Watching for file changes with StatReloader
+INFO 2025-08-26 23:50:03,888 autoreload 19608 19604 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-26 23:50:04,260 autoreload 18300 17852 Watching for file changes with StatReloader
+INFO 2025-08-27 00:13:39,609 views 6252 3908 Using simple mistral client for better performance
+INFO 2025-08-27 00:13:51,550 views 17692 508 Using simple mistral client for better performance
+INFO 2025-08-27 00:14:02,854 autoreload 11832 12388 Watching for file changes with StatReloader
+INFO 2025-08-27 00:14:06,921 views 11832 12388 Using simple mistral client for better performance
+INFO 2025-08-27 00:15:32,924 basehttp 11832 18772 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 00:15:33,074 basehttp 11832 18772 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 00:15:33,117 basehttp 11832 18772 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 00:15:33,157 basehttp 11832 18772 "POST /api/quote/ HTTP/1.1" 200 105
+INFO 2025-08-27 00:15:33,199 basehttp 11832 18772 "POST /api/quote/ HTTP/1.1" 200 127
+INFO 2025-08-27 00:15:33,240 basehttp 11832 18772 "POST /api/quote/ HTTP/1.1" 200 127
+INFO 2025-08-27 00:15:33,285 basehttp 11832 18772 "POST /api/quote/ HTTP/1.1" 200 266
+INFO 2025-08-27 00:17:06,642 autoreload 11832 12388 C:\Users\USER\Desktop\bhagent\quotes\views.py changed, reloading.
+INFO 2025-08-27 00:17:07,760 autoreload 20232 1376 Watching for file changes with StatReloader
+INFO 2025-08-27 00:17:11,796 views 20232 1376 Using simple mistral client for better performance
+INFO 2025-08-27 00:17:21,600 basehttp 20232 17828 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 00:17:21,645 basehttp 20232 17828 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 00:17:21,690 basehttp 20232 17828 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 00:17:21,732 basehttp 20232 17828 "POST /api/quote/ HTTP/1.1" 200 105
+INFO 2025-08-27 00:17:21,774 basehttp 20232 17828 "POST /api/quote/ HTTP/1.1" 200 127
+INFO 2025-08-27 00:17:21,813 basehttp 20232 17828 "POST /api/quote/ HTTP/1.1" 200 127
+WARNING 2025-08-27 00:17:21,853 log 20232 17828 Unauthorized: /api/quote/
+WARNING 2025-08-27 00:17:21,853 basehttp 20232 17828 "POST /api/quote/ HTTP/1.1" 401 315
+INFO 2025-08-27 00:17:34,576 basehttp 20232 19220 "POST /api/auth/register/ HTTP/1.1" 201 357
+INFO 2025-08-27 00:17:35,001 basehttp 20232 16156 "POST /api/auth/login/ HTTP/1.1" 200 345
+INFO 2025-08-27 00:17:35,041 basehttp 20232 16188 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 00:17:35,085 basehttp 20232 16188 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 00:17:35,130 basehttp 20232 16188 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 00:17:35,172 basehttp 20232 16188 "POST /api/quote/ HTTP/1.1" 200 105
+INFO 2025-08-27 00:17:35,233 basehttp 20232 16188 "POST /api/quote/ HTTP/1.1" 200 127
+INFO 2025-08-27 00:17:35,386 basehttp 20232 16188 "POST /api/quote/ HTTP/1.1" 200 127
+INFO 2025-08-27 00:17:35,430 basehttp 20232 16188 "POST /api/quote/ HTTP/1.1" 200 266
+INFO 2025-08-27 00:20:41,992 autoreload 20232 1376 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:20:44,239 autoreload 20764 2936 Watching for file changes with StatReloader
+INFO 2025-08-27 00:20:49,148 views 20764 2936 Using simple mistral client for better performance
+INFO 2025-08-27 00:20:54,243 autoreload 20764 2936 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:20:55,933 autoreload 20496 8616 Watching for file changes with StatReloader
+INFO 2025-08-27 00:21:00,274 views 20496 8616 Using simple mistral client for better performance
+INFO 2025-08-27 00:21:11,983 autoreload 20496 8616 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:21:13,649 autoreload 19000 15476 Watching for file changes with StatReloader
+INFO 2025-08-27 00:21:17,560 views 19000 15476 Using simple mistral client for better performance
+INFO 2025-08-27 00:21:37,221 autoreload 19000 15476 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:21:38,329 autoreload 17444 19336 Watching for file changes with StatReloader
+INFO 2025-08-27 00:21:42,447 views 17444 19336 Using simple mistral client for better performance
+INFO 2025-08-27 00:21:57,640 autoreload 17444 19336 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:21:58,714 autoreload 16400 17560 Watching for file changes with StatReloader
+INFO 2025-08-27 00:22:03,118 views 16400 17560 Using simple mistral client for better performance
+INFO 2025-08-27 00:22:10,683 autoreload 16400 17560 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:22:12,571 autoreload 20520 18836 Watching for file changes with StatReloader
+INFO 2025-08-27 00:22:16,416 views 20520 18836 Using simple mistral client for better performance
+INFO 2025-08-27 00:22:25,095 autoreload 20520 18836 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:22:27,009 autoreload 21200 14700 Watching for file changes with StatReloader
+INFO 2025-08-27 00:22:31,238 views 21200 14700 Using simple mistral client for better performance
+INFO 2025-08-27 00:22:45,685 autoreload 21200 14700 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-27 00:22:47,370 autoreload 4112 18976 Watching for file changes with StatReloader
+INFO 2025-08-27 00:22:51,531 views 4112 18976 Using simple mistral client for better performance
+INFO 2025-08-27 00:24:07,392 autoreload 4112 18976 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:24:08,392 autoreload 13024 14380 Watching for file changes with StatReloader
+INFO 2025-08-27 00:24:12,264 views 13024 14380 Using simple mistral client for better performance
+INFO 2025-08-27 00:24:17,991 autoreload 13024 14380 C:\Users\USER\Desktop\bhagent\quotes\views.py changed, reloading.
+INFO 2025-08-27 00:24:18,958 autoreload 5920 16596 Watching for file changes with StatReloader
+INFO 2025-08-27 00:24:22,910 views 5920 16596 Using simple mistral client for better performance
+INFO 2025-08-27 00:25:38,865 autoreload 5920 16596 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 00:25:40,513 autoreload 17908 20992 Watching for file changes with StatReloader
+INFO 2025-08-27 00:25:44,674 views 17908 20992 Using simple mistral client for better performance

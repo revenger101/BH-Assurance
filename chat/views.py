@@ -59,9 +59,10 @@ class ChatView(APIView):
     def post(self, request):
         start_time = time.time()
         user_message = request.data.get("message", "").strip()
+        is_voice = request.data.get("is_voice", False)
 
         # Log the request length only (avoid logging full user content)
-        logger.info(f"Chat request received (len={len(user_message)})")
+        logger.info(f"Chat request received (len={len(user_message)}, voice={is_voice})")
 
         # Detect confidential intent
         det = detect_confidential_query(user_message)
@@ -70,28 +71,60 @@ class ChatView(APIView):
         if det["is_confidential"] and not is_auth:
             # Reject with an auth reminder for confidential queries
             response_time = time.time() - start_time
+            auth_message = (
+                "Pour accéder à vos informations personnelles, vous devez d'abord vous authentifier. "
+                "Connectez-vous à votre espace client et renvoyez votre demande."
+            ) if is_voice else (
+                "Pour accéder à des informations personnelles ou confidentielles, "
+                "merci de vous authentifier d'abord. Connectez-vous et renvoyez votre demande."
+            )
             return Response(
                 {
-                    "response": (
-                        "Pour accéder à des informations personnelles ou confidentielles, "
-                        "merci de vous authentifier d'abord. Connectez-vous et renvoyez votre demande."
-                    ),
+                    "response": auth_message,
                     "confidential": True,
                     "requires_auth": True,
                     "reason": "confidential_request",
                     "matched": det["matched"],
                     "response_time": round(response_time, 2),
+                    "is_voice_optimized": is_voice,
                     "how_to_auth": "Ajoutez l'en-tête Authorization: Token <votre_token> ou utilisez la session."
                 },
                 status=status.HTTP_401_UNAUTHORIZED,
             )
 
         # Otherwise, proceed and answer
-        response_text = chat_completion(user_message, max_tokens=120)
+        if is_voice:
+            # Enhanced prompt for Jarvis-like voice interactions
+            enhanced_message = f"""Tu es Jarvis, l'assistant virtuel intelligent de BH Assurance, inspiré de l'IA de Tony Stark.
+            Tu es sophistiqué, professionnel, et légèrement formel mais bienveillant.
+
+            Caractéristiques de ta personnalité:
+            - Utilise "Monsieur" ou "Madame" quand approprié
+            - Réponds avec assurance et précision
+            - Sois concis mais informatif (maximum 2-3 phrases)
+            - Utilise un vocabulaire légèrement soutenu
+            - Montre ton intelligence artificielle avec subtilité
+
+            Exemples de ton style:
+            - "Bien sûr, Monsieur. Je peux vous aider avec cela."
+            - "D'après mes analyses, voici ce que je recommande..."
+            - "Permettez-moi de vous expliquer..."
+            - "Je suis à votre disposition pour toute question supplémentaire."
+
+            Question de l'utilisateur: {user_message}"""
+            response_text = chat_completion(enhanced_message, max_tokens=120)
+
+            # Post-process response for Jarvis-like speech
+            response_text = response_text.replace("**", "").replace("*", "")
+            # Add natural pauses for more sophisticated speech
+            response_text = response_text.replace(". ", ". ... ")
+            response_text = response_text.replace(", ", ", ... ")
+        else:
+            response_text = chat_completion(user_message, max_tokens=120)
 
         # Log response time
         response_time = time.time() - start_time
-        logger.info(f"Response generated in {response_time:.2f}s")
+        logger.info(f"Response generated in {response_time:.2f}s (voice={is_voice})")
 
         return Response(
             {
@@ -100,6 +133,7 @@ class ChatView(APIView):
                 "confidential": det["is_confidential"],
                 "matched": det["matched"],
                 "authenticated": is_auth,
+                "is_voice_optimized": is_voice,
             },
             status=status.HTTP_200_OK,
         )

@@ -41,11 +41,11 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         """Validate name format"""
         if len(value.strip()) < 2:
             raise serializers.ValidationError("Name must be at least 2 characters long.")
-        
-        # Check if name contains only letters and spaces
-        if not re.match(r'^[a-zA-Z\s]+$', value):
-            raise serializers.ValidationError("Name can only contain letters and spaces.")
-        
+
+        # Check if name contains only letters, numbers, spaces, and common punctuation
+        if not re.match(r'^[a-zA-Z0-9\s\.\-\']+$', value):
+            raise serializers.ValidationError("Name can only contain letters, numbers, spaces, dots, hyphens, and apostrophes.")
+
         return value.strip().title()
     
     def validate_phone_number(self, value):
@@ -136,10 +136,10 @@ class UserProfileSerializer(serializers.ModelSerializer):
         """Validate name format"""
         if len(value.strip()) < 2:
             raise serializers.ValidationError("Name must be at least 2 characters long.")
-        
-        if not re.match(r'^[a-zA-Z\s]+$', value):
-            raise serializers.ValidationError("Name can only contain letters and spaces.")
-        
+
+        if not re.match(r'^[a-zA-Z0-9\s\.\-\']+$', value):
+            raise serializers.ValidationError("Name can only contain letters, numbers, spaces, dots, hyphens, and apostrophes.")
+
         return value.strip().title()
     
     def validate_phone_number(self, value):

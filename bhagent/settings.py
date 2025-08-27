@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',  # DISABLED FOR API
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -82,7 +82,7 @@ REST_FRAMEWORK = {
     "DEFAULT_PARSER_CLASSES": ["rest_framework.parsers.JSONParser"],
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.TokenAuthentication",
-        "rest_framework.authentication.SessionAuthentication",
+        # "rest_framework.authentication.SessionAuthentication",  # DISABLED - CAUSES CSRF ISSUES
     ],
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
@@ -193,10 +193,17 @@ SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'False') == 'True'
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = os.getenv('SESSION_COOKIE_SAMESITE', 'Lax')
 
-# CSRF settings
-CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', 'False') == 'True'
-CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SAMESITE = os.getenv('CSRF_COOKIE_SAMESITE', 'Lax')
+# CSRF DISABLED FOR API DEVELOPMENT
+# Note: In production, implement proper CSRF protection for non-API endpoints
+
+# For production, uncomment the following and add CSRF middleware back:
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://yourdomain.com',
+#     'https://www.yourdomain.com',
+# ]
+# CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_HTTPONLY = True
+# CSRF_COOKIE_SAMESITE = 'Strict'
 
 # Security settings (for production)
 SECURE_BROWSER_XSS_FILTER = True

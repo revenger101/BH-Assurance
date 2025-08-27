@@ -10,16 +10,21 @@ class QuoteRequest(models.Model):
         related_name='quote_requests'
     )
 
-    # Collected inputs
+    # Basic info
     produit = models.CharField(max_length=32)
-    age = models.PositiveIntegerField()
-    capital = models.PositiveIntegerField()
-    duree = models.PositiveIntegerField()
-    fumeur = models.BooleanField()
 
-    # Final computed/sourced quote
+    # Store all collected inputs as JSON (flexible for different products)
+    collected_data = models.JSONField(default=dict)
+
+    # Legacy fields (kept for backward compatibility)
+    age = models.PositiveIntegerField(null=True, blank=True)
+    capital = models.PositiveIntegerField(null=True, blank=True)
+    duree = models.PositiveIntegerField(null=True, blank=True)
+    fumeur = models.BooleanField(null=True, blank=True)
+
+    # Quote result
     devis = models.JSONField()
-    source = models.CharField(max_length=20, default='simulated')  # 'api' or 'simulated'
+    source = models.CharField(max_length=30, default='simulated')  # 'api_externe', 'simulated', 'api'
 
     # Request context
     session_key = models.CharField(max_length=64, blank=True, default='')
@@ -31,5 +36,6 @@ class QuoteRequest(models.Model):
 
     def __str__(self):
         who = self.user.email if self.user else 'anonymous'
-        return f"Quote({self.produit}, {self.capital} TND, {who}, {self.created_at:%Y-%m-%d})"
+        capital_info = self.collected_data.get('capital') or self.collected_data.get('valeur_venale') or 'N/A'
+        return f"Quote({self.produit}, {capital_info} TND, {who}, {self.created_at:%Y-%m-%d})"
 

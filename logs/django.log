@@ -874,3 +874,858 @@ INFO 2025-08-27 00:24:22,910 views 5920 16596 Using simple mistral client for be
 INFO 2025-08-27 00:25:38,865 autoreload 5920 16596 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
 INFO 2025-08-27 00:25:40,513 autoreload 17908 20992 Watching for file changes with StatReloader
 INFO 2025-08-27 00:25:44,674 views 17908 20992 Using simple mistral client for better performance
+INFO 2025-08-27 09:07:38,697 autoreload 19772 9888 Watching for file changes with StatReloader
+INFO 2025-08-27 09:08:00,419 views 19772 9888 Using simple mistral client for better performance
+INFO 2025-08-27 09:08:19,132 basehttp 19772 21152 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+ERROR 2025-08-27 09:08:19,658 log 19772 21152 Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\authentication\views.py", line 34, in register_user
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 501, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\fields.py", line 757, in run_validation
+    return super().run_validation(data)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\fields.py", line 539, in run_validation
+    self.run_validators(value)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\fields.py", line 551, in run_validators
+    validator(value, self)
+    ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\validators.py", line 86, in __call__
+    if qs_exists(queryset):
+       ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\validators.py", line 23, in qs_exists
+    return queryset.exists()
+           ~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 1296, in exists
+    return self.query.has_results(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\query.py", line 674, in has_results
+    return compiler.has_results()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py", line 1591, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 255, in connect
+    conn_params = self.get_connection_params()
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\base.py", line 241, in get_connection_params
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the NAME or OPTIONS['service'] value.
+ERROR 2025-08-27 09:08:19,671 basehttp 19772 21152 "POST /api/auth/register/ HTTP/1.1" 500 194832
+INFO 2025-08-27 09:10:33,221 autoreload 20336 18760 Watching for file changes with StatReloader
+INFO 2025-08-27 09:10:33,682 basehttp 19772 21152 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+ERROR 2025-08-27 09:10:33,966 log 19772 21152 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\authentication\views.py", line 79, in login_user
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\USER\Desktop\bhagent\authentication\serializers.py", line 112, in validate
+    user = authenticate(email=email, password=password)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 255, in connect
+    conn_params = self.get_connection_params()
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\base.py", line 241, in get_connection_params
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the NAME or OPTIONS['service'] value.
+ERROR 2025-08-27 09:10:33,986 basehttp 19772 21152 "POST /api/auth/login/ HTTP/1.1" 500 194784
+INFO 2025-08-27 09:10:37,565 views 20336 18760 Using simple mistral client for better performance
+ERROR 2025-08-27 09:10:53,854 log 19772 21152 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\authentication\views.py", line 79, in login_user
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\USER\Desktop\bhagent\authentication\serializers.py", line 112, in validate
+    user = authenticate(email=email, password=password)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py", line 255, in connect
+    conn_params = self.get_connection_params()
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\base.py", line 241, in get_connection_params
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the NAME or OPTIONS['service'] value.
+ERROR 2025-08-27 09:10:53,858 basehttp 19772 21152 "POST /api/auth/login/ HTTP/1.1" 500 195499
+INFO 2025-08-27 09:11:22,868 basehttp 20336 8752 "OPTIONS /api/auth/register/ HTTP/1.1" 200 121
+WARNING 2025-08-27 09:11:35,092 log 20336 20832 Bad Request: /api/auth/register/
+WARNING 2025-08-27 09:11:35,092 basehttp 20336 20832 "POST /api/auth/register/ HTTP/1.1" 400 162
+INFO 2025-08-27 09:12:58,104 basehttp 20336 21144 "POST /api/auth/register/ HTTP/1.1" 201 351
+INFO 2025-08-27 09:13:07,510 basehttp 20336 9692 "POST /api/auth/login/ HTTP/1.1" 200 339
+WARNING 2025-08-27 09:14:25,749 log 20336 17884 Bad Request: /api/auth/register/
+WARNING 2025-08-27 09:14:25,750 basehttp 20336 17884 "POST /api/auth/register/ HTTP/1.1" 400 214
+INFO 2025-08-27 09:17:37,147 autoreload 20336 18760 C:\Users\USER\Desktop\bhagent\authentication\views.py changed, reloading.
+INFO 2025-08-27 09:17:38,756 autoreload 5576 11560 Watching for file changes with StatReloader
+INFO 2025-08-27 09:17:43,239 views 5576 11560 Using simple mistral client for better performance
+INFO 2025-08-27 09:18:08,240 autoreload 5576 11560 C:\Users\USER\Desktop\bhagent\authentication\views.py changed, reloading.
+INFO 2025-08-27 09:18:09,890 autoreload 19516 8564 Watching for file changes with StatReloader
+INFO 2025-08-27 09:18:13,983 views 19516 8564 Using simple mistral client for better performance
+INFO 2025-08-27 09:19:16,705 views 19516 7428 Registration attempt with data: {'name': 'Test User2', 'email': 'test2@example.com', 'user_type': 'CLIENT', 'password': 'testpass123', 'password_confirm': 'testpass123'}
+ERROR 2025-08-27 09:19:16,768 views 19516 7428 Registration validation failed: {'name': [ErrorDetail(string='Name can only contain letters and spaces.', code='invalid')]}
+WARNING 2025-08-27 09:19:16,769 log 19516 7428 Bad Request: /api/auth/register/
+WARNING 2025-08-27 09:19:16,770 basehttp 19516 7428 "POST /api/auth/register/ HTTP/1.1" 400 113
+INFO 2025-08-27 09:19:44,901 autoreload 19516 8564 C:\Users\USER\Desktop\bhagent\authentication\serializers.py changed, reloading.
+INFO 2025-08-27 09:19:46,013 autoreload 5112 20460 Watching for file changes with StatReloader
+INFO 2025-08-27 09:19:50,241 views 5112 20460 Using simple mistral client for better performance
+INFO 2025-08-27 09:19:58,070 autoreload 5112 20460 C:\Users\USER\Desktop\bhagent\authentication\serializers.py changed, reloading.
+INFO 2025-08-27 09:19:59,059 autoreload 10948 21236 Watching for file changes with StatReloader
+INFO 2025-08-27 09:20:03,035 views 10948 21236 Using simple mistral client for better performance
+INFO 2025-08-27 09:20:09,100 views 10948 12616 Registration attempt with data: {'name': 'Test User2', 'email': 'test2@example.com', 'user_type': 'CLIENT', 'password': 'testpass123', 'password_confirm': 'testpass123'}
+INFO 2025-08-27 09:20:09,559 basehttp 10948 12616 "POST /api/auth/register/ HTTP/1.1" 201 353
+INFO 2025-08-27 09:20:22,425 views 10948 12044 Registration attempt with data: {'name': "Mary O'Connor", 'email': 'mary@example.com', 'user_type': 'CLIENT', 'password': 'testpass123', 'password_confirm': 'testpass123'}
+INFO 2025-08-27 09:20:22,819 basehttp 10948 12044 "POST /api/auth/register/ HTTP/1.1" 201 355
+INFO 2025-08-27 09:20:30,013 views 10948 21216 Registration attempt with data: {'name': 'Jean-Pierre Dupont', 'email': 'jean@example.com', 'user_type': 'CLIENT', 'password': 'testpass123', 'password_confirm': 'testpass123'}
+INFO 2025-08-27 09:20:30,418 basehttp 10948 21216 "POST /api/auth/register/ HTTP/1.1" 201 360
+INFO 2025-08-27 09:21:37,294 views 10948 4032 Registration attempt with data: {'email': 'hechmiidoudi1@gmail.com', 'name': 'Hechmi idoudi', 'phone_number': 'hechmiidoudi1@gmail.com', 'user_type': 'CLIENT', 'password': 'C4y3eABEar8VrMY', 'password_confirm': 'C4y3eABEar8VrMY'}
+ERROR 2025-08-27 09:21:37,372 views 10948 4032 Registration validation failed: {'phone_number': [ErrorDetail(string="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.", code='invalid'), ErrorDetail(string='Ensure this field has no more than 17 characters.', code='max_length')]}
+WARNING 2025-08-27 09:21:37,374 log 10948 4032 Bad Request: /api/auth/register/
+WARNING 2025-08-27 09:21:37,375 basehttp 10948 4032 "POST /api/auth/register/ HTTP/1.1" 400 214
+INFO 2025-08-27 09:21:57,605 views 10948 4032 Registration attempt with data: {'email': 'hechmiidoudi1@gmail.com', 'name': 'Hechmi idoudi', 'phone_number': '92870933', 'user_type': 'CLIENT', 'password': 'C4y3eABEar8VrMY', 'password_confirm': 'C4y3eABEar8VrMY'}
+INFO 2025-08-27 09:21:59,091 basehttp 10948 4032 "POST /api/auth/register/ HTTP/1.1" 201 370
+INFO 2025-08-27 09:22:04,097 basehttp 10948 4032 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 09:22:04,109 basehttp 10948 4032 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-27 09:22:04,195 basehttp 10948 4032 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:23:16,471 basehttp 10948 4032 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+INFO 2025-08-27 09:23:16,531 basehttp 10948 4032 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 09:23:21,910 basehttp 10948 4032 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 09:23:21,996 basehttp 10948 4032 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:23:45,383 basehttp 10948 4032 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:23:45,443 basehttp 10948 4032 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:26:40,044 basehttp 10948 4032 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:26:40,100 basehttp 10948 4032 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:26:51,561 views 10948 1700 Chat request received (len=28)
+INFO 2025-08-27 09:26:55,811 modeling 10948 1700 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-27 09:27:20,398 big_modeling 10948 1700 Some parameters are on the meta device because they were offloaded to the disk and cpu.
+INFO 2025-08-27 09:29:27,739 views 10948 1700 Response generated in 156.18s
+INFO 2025-08-27 09:29:27,744 basehttp 10948 1700 "POST /api/chat/ HTTP/1.1" 200 155
+INFO 2025-08-27 09:31:21,290 basehttp 10948 19236 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:31:21,334 basehttp 10948 19236 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 09:31:33,293 basehttp 10948 19236 "OPTIONS /api/chat/ HTTP/1.1" 200 0
+INFO 2025-08-27 09:31:33,348 views 10948 19236 Chat request received (len=8)
+INFO 2025-08-27 09:33:32,661 views 10948 19236 Response generated in 119.31s
+INFO 2025-08-27 09:33:32,662 basehttp 10948 19236 "POST /api/chat/ HTTP/1.1" 200 141
+INFO 2025-08-27 09:33:44,343 views 10948 19236 Chat request received (len=68)
+INFO 2025-08-27 09:37:29,612 views 10948 19236 Response generated in 225.27s
+INFO 2025-08-27 09:37:29,613 basehttp 10948 19236 "POST /api/chat/ HTTP/1.1" 200 201
+INFO 2025-08-27 09:50:32,366 views 10948 18908 Chat request received (len=50)
+INFO 2025-08-27 09:59:03,576 views 10948 18908 Response generated in 511.21s
+INFO 2025-08-27 09:59:03,578 basehttp 10948 18908 "POST /api/chat/ HTTP/1.1" 200 292
+INFO 2025-08-27 10:02:58,217 views 10948 18908 Chat request received (len=50)
+INFO 2025-08-27 10:02:58,290 views 10948 18908 Response generated in 0.07s
+INFO 2025-08-27 10:02:58,299 basehttp 10948 18908 "POST /api/chat/ HTTP/1.1" 200 290
+INFO 2025-08-27 12:01:58,196 autoreload 7780 3140 Watching for file changes with StatReloader
+INFO 2025-08-27 12:02:25,049 views 7780 3140 Using simple mistral client for better performance
+INFO 2025-08-27 12:02:48,164 basehttp 7780 14640 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:02:57,736 basehttp 7780 7372 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:03:07,780 basehttp 7780 2808 "POST /api/quote/ HTTP/1.1" 200 105
+INFO 2025-08-27 12:03:18,999 basehttp 7780 6280 "POST /api/quote/ HTTP/1.1" 200 128
+INFO 2025-08-27 12:03:27,890 basehttp 7780 16736 "POST /api/quote/ HTTP/1.1" 200 128
+INFO 2025-08-27 12:03:34,797 basehttp 7780 10168 "OPTIONS /api/quote/ HTTP/1.1" 200 0
+INFO 2025-08-27 12:03:34,798 basehttp 7780 9204 "OPTIONS /api/quote/ HTTP/1.1" 200 0
+INFO 2025-08-27 12:03:34,891 basehttp 7780 10168 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:03:34,893 basehttp 7780 9204 "POST /api/quote/ HTTP/1.1" 200 115
+WARNING 2025-08-27 12:03:37,700 log 7780 2796 Unauthorized: /api/quote/
+WARNING 2025-08-27 12:03:37,701 basehttp 7780 2796 "POST /api/quote/ HTTP/1.1" 401 317
+INFO 2025-08-27 12:04:00,975 basehttp 7780 10168 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:04:00,979 basehttp 7780 9204 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:05:40,360 basehttp 7780 19180 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 12:05:48,027 basehttp 7780 7516 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:05:55,551 basehttp 7780 19208 "POST /api/quote/ HTTP/1.1" 200 84
+INFO 2025-08-27 12:06:04,004 basehttp 7780 19424 "POST /api/quote/ HTTP/1.1" 200 106
+INFO 2025-08-27 12:06:11,303 basehttp 7780 3716 "POST /api/quote/ HTTP/1.1" 200 128
+INFO 2025-08-27 12:06:18,667 basehttp 7780 12780 "POST /api/quote/ HTTP/1.1" 200 127
+INFO 2025-08-27 12:06:26,023 basehttp 7780 19328 "POST /api/quote/ HTTP/1.1" 200 264
+INFO 2025-08-27 12:09:23,223 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:09:34,134 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:09:49,364 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 85
+INFO 2025-08-27 12:09:57,580 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:10:07,563 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 85
+INFO 2025-08-27 12:10:17,258 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:10:31,211 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 84
+INFO 2025-08-27 12:10:34,459 basehttp 7780 18748 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:16:53,984 autoreload 7780 3140 C:\Users\USER\Desktop\bhagent\quotes\flow.py changed, reloading.
+INFO 2025-08-27 12:16:55,337 autoreload 11624 15356 Watching for file changes with StatReloader
+INFO 2025-08-27 12:16:59,968 views 11624 15356 Using simple mistral client for better performance
+INFO 2025-08-27 12:17:12,036 autoreload 11624 15356 C:\Users\USER\Desktop\bhagent\quotes\flow.py changed, reloading.
+INFO 2025-08-27 12:17:13,391 autoreload 1620 7900 Watching for file changes with StatReloader
+INFO 2025-08-27 12:17:18,410 views 1620 7900 Using simple mistral client for better performance
+INFO 2025-08-27 12:17:39,052 autoreload 1620 7900 C:\Users\USER\Desktop\bhagent\quotes\flow.py changed, reloading.
+INFO 2025-08-27 12:17:40,172 autoreload 18932 10288 Watching for file changes with StatReloader
+INFO 2025-08-27 12:17:44,836 views 18932 10288 Using simple mistral client for better performance
+INFO 2025-08-27 12:17:53,785 autoreload 18932 10288 C:\Users\USER\Desktop\bhagent\quotes\flow.py changed, reloading.
+INFO 2025-08-27 12:17:54,821 autoreload 14372 9800 Watching for file changes with StatReloader
+INFO 2025-08-27 12:17:59,379 views 14372 9800 Using simple mistral client for better performance
+INFO 2025-08-27 12:18:18,775 autoreload 14372 9800 C:\Users\USER\Desktop\bhagent\quotes\flow.py changed, reloading.
+INFO 2025-08-27 12:18:20,124 autoreload 2904 4660 Watching for file changes with StatReloader
+INFO 2025-08-27 12:18:25,165 views 2904 4660 Using simple mistral client for better performance
+INFO 2025-08-27 12:18:41,587 autoreload 2904 4660 C:\Users\USER\Desktop\bhagent\quotes\views.py changed, reloading.
+INFO 2025-08-27 12:18:42,975 autoreload 5460 2216 Watching for file changes with StatReloader
+INFO 2025-08-27 12:18:48,117 views 5460 2216 Using simple mistral client for better performance
+INFO 2025-08-27 12:19:07,645 autoreload 5460 2216 C:\Users\USER\Desktop\bhagent\quotes\models.py changed, reloading.
+INFO 2025-08-27 12:19:08,901 autoreload 17008 15272 Watching for file changes with StatReloader
+INFO 2025-08-27 12:19:14,050 views 17008 15272 Using simple mistral client for better performance
+INFO 2025-08-27 12:19:26,237 autoreload 17008 15272 C:\Users\USER\Desktop\bhagent\quotes\views.py changed, reloading.
+INFO 2025-08-27 12:19:27,456 autoreload 10052 17664 Watching for file changes with StatReloader
+INFO 2025-08-27 12:19:32,425 views 10052 17664 Using simple mistral client for better performance
+INFO 2025-08-27 12:19:42,812 views 13248 16228 Using simple mistral client for better performance
+INFO 2025-08-27 12:19:56,570 views 15576 18820 Using simple mistral client for better performance
+INFO 2025-08-27 12:21:46,386 basehttp 10052 18076 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:21:55,335 basehttp 10052 14300 "POST /api/quote/ HTTP/1.1" 200 104
+INFO 2025-08-27 12:22:03,129 basehttp 10052 16716 "POST /api/quote/ HTTP/1.1" 200 134
+INFO 2025-08-27 12:22:09,659 basehttp 10052 3804 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:22:17,417 basehttp 10052 14908 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:22:36,729 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:22:36,730 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:23:39,442 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 104
+INFO 2025-08-27 12:23:47,544 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:24:03,205 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:24:09,784 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:24:13,056 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:24:18,198 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:24:21,150 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:24:29,785 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:24:33,066 basehttp 10052 1824 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:24:33,213 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:24:51,045 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:24:51,045 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 115
+WARNING 2025-08-27 12:24:54,093 log 10052 4252 Too Many Requests: /api/quote/
+WARNING 2025-08-27 12:24:54,094 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 429 69
+INFO 2025-08-27 12:25:18,526 basehttp 10052 1824 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:25:18,668 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:25:28,878 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:25:37,276 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:25:57,819 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 85
+INFO 2025-08-27 12:26:14,749 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:26:23,978 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 119
+INFO 2025-08-27 12:26:39,454 basehttp 10052 4252 "POST /api/quote/ HTTP/1.1" 200 170
+INFO 2025-08-27 12:28:00,791 basehttp 10052 15264 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:28:10,675 basehttp 10052 15676 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:28:19,419 basehttp 10052 19368 "POST /api/quote/ HTTP/1.1" 200 104
+INFO 2025-08-27 12:28:28,758 basehttp 10052 18124 "POST /api/quote/ HTTP/1.1" 200 134
+INFO 2025-08-27 12:28:49,102 basehttp 10052 4252 "OPTIONS /api/quote/ HTTP/1.1" 200 0
+INFO 2025-08-27 12:28:49,102 basehttp 10052 1824 "OPTIONS /api/quote/ HTTP/1.1" 200 0
+INFO 2025-08-27 12:28:49,490 basehttp 10052 15420 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:28:49,491 basehttp 10052 5956 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:29:15,909 autoreload 10968 15704 Watching for file changes with StatReloader
+INFO 2025-08-27 12:29:20,905 views 10968 15704 Using simple mistral client for better performance
+INFO 2025-08-27 12:29:44,539 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:29:44,542 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:29:54,893 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:30:00,083 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 200 105
+INFO 2025-08-27 12:30:07,052 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 200 126
+INFO 2025-08-27 12:30:20,606 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 200 125
+WARNING 2025-08-27 12:30:28,037 log 10968 3716 Unauthorized: /api/quote/
+WARNING 2025-08-27 12:30:28,038 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 401 314
+WARNING 2025-08-27 12:30:38,318 log 10968 3716 Unauthorized: /api/quote/
+WARNING 2025-08-27 12:30:38,319 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 401 314
+WARNING 2025-08-27 12:30:38,322 log 10968 18388 Unauthorized: /api/quote/
+WARNING 2025-08-27 12:30:38,323 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 401 314
+INFO 2025-08-27 12:30:51,969 basehttp 10968 17520 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-08-27 12:30:53,217 basehttp 10968 18388 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 12:30:53,228 basehttp 10968 17520 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-27 12:30:53,307 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:30:54,998 basehttp 10968 3716 "POST /api/quote/ HTTP/1.1" 200 315
+INFO 2025-08-27 12:30:55,052 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 315
+INFO 2025-08-27 12:31:00,975 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 315
+INFO 2025-08-27 12:31:24,949 basehttp 10968 18388 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:31:25,143 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:31:49,809 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 85
+INFO 2025-08-27 12:31:53,573 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 113
+INFO 2025-08-27 12:31:58,103 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 293
+INFO 2025-08-27 12:36:26,309 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:36:26,352 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:37:16,013 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:37:16,058 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:37:18,936 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:37:19,095 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:41:44,977 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 293
+INFO 2025-08-27 12:41:45,069 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 293
+INFO 2025-08-27 12:41:48,193 basehttp 10968 18388 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:41:48,308 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:42:36,764 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 104
+INFO 2025-08-27 12:42:58,970 basehttp 10968 18388 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:42:59,110 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:43:02,577 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 83
+INFO 2025-08-27 12:43:11,141 basehttp 10968 18388 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:43:11,314 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:43:16,931 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 85
+INFO 2025-08-27 12:43:21,226 basehttp 10968 18388 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:43:21,404 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:43:37,225 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 119
+INFO 2025-08-27 12:44:50,073 basehttp 10968 18388 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:44:50,196 basehttp 10968 18388 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 12:45:18,708 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:45:18,881 basehttp 10968 18388 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:49:08,377 basehttp 10968 14528 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 12:49:25,578 autoreload 10968 15704 C:\Users\USER\Desktop\bhagent\quotes\views.py changed, reloading.
+INFO 2025-08-27 12:49:27,170 autoreload 12996 19132 Watching for file changes with StatReloader
+INFO 2025-08-27 12:49:33,839 views 12996 19132 Using simple mistral client for better performance
+INFO 2025-08-27 12:50:19,334 basehttp 12996 13840 "DELETE /api/quote/ HTTP/1.1" 200 40
+INFO 2025-08-27 12:50:27,120 basehttp 12996 18984 "POST /api/quote/ HTTP/1.1" 200 115
+WARNING 2025-08-27 12:51:24,089 log 12996 13288 Forbidden: /api/quote/
+WARNING 2025-08-27 12:51:24,090 basehttp 12996 13288 "POST /api/quote/ HTTP/1.1" 403 108
+WARNING 2025-08-27 12:51:24,101 log 12996 5532 Forbidden: /api/quote/
+WARNING 2025-08-27 12:51:24,105 basehttp 12996 5532 "POST /api/quote/ HTTP/1.1" 403 108
+WARNING 2025-08-27 12:51:29,521 log 12996 5532 Forbidden: /api/quote/
+WARNING 2025-08-27 12:51:29,523 basehttp 12996 5532 "DELETE /api/quote/ HTTP/1.1" 403 108
+WARNING 2025-08-27 12:51:30,534 log 12996 5532 Forbidden: /api/quote/
+WARNING 2025-08-27 12:51:30,536 basehttp 12996 5532 "DELETE /api/quote/ HTTP/1.1" 403 108
+WARNING 2025-08-27 12:51:47,657 log 12996 5532 Forbidden: /api/auth/login/
+WARNING 2025-08-27 12:51:47,658 basehttp 12996 5532 "POST /api/auth/login/ HTTP/1.1" 403 108
+WARNING 2025-08-27 12:51:53,745 log 12996 5532 Forbidden: /api/auth/login/
+WARNING 2025-08-27 12:51:53,746 basehttp 12996 5532 "POST /api/auth/login/ HTTP/1.1" 403 108
+WARNING 2025-08-27 12:52:14,173 log 12996 5532 Forbidden: /api/auth/login/
+WARNING 2025-08-27 12:52:14,174 basehttp 12996 5532 "POST /api/auth/login/ HTTP/1.1" 403 108
+INFO 2025-08-27 12:55:19,170 autoreload 12996 19132 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 12:55:20,679 autoreload 16936 18604 Watching for file changes with StatReloader
+INFO 2025-08-27 12:55:25,813 views 16936 18604 Using simple mistral client for better performance
+INFO 2025-08-27 12:57:34,224 autoreload 12260 15216 Watching for file changes with StatReloader
+INFO 2025-08-27 12:57:39,322 views 12260 15216 Using simple mistral client for better performance
+INFO 2025-08-27 12:58:07,018 basehttp 12260 17076 "POST /api/auth/login/ HTTP/1.1" 200 358
+WARNING 2025-08-27 12:58:34,810 log 12260 17256 Forbidden: /api/quote/
+WARNING 2025-08-27 12:58:34,812 log 12260 19392 Forbidden: /api/quote/
+WARNING 2025-08-27 12:58:34,813 basehttp 12260 17256 "POST /api/quote/ HTTP/1.1" 403 45
+WARNING 2025-08-27 12:58:34,815 basehttp 12260 19392 "POST /api/quote/ HTTP/1.1" 403 45
+INFO 2025-08-27 12:59:45,873 autoreload 12260 15216 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 12:59:47,393 autoreload 3324 7808 Watching for file changes with StatReloader
+INFO 2025-08-27 12:59:52,445 views 3324 7808 Using simple mistral client for better performance
+INFO 2025-08-27 13:00:08,030 autoreload 19384 17732 Watching for file changes with StatReloader
+INFO 2025-08-27 13:00:12,848 views 19384 17732 Using simple mistral client for better performance
+INFO 2025-08-27 13:00:54,760 basehttp 19384 5956 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:01:38,785 basehttp 19384 8096 "POST /api/quote/ HTTP/1.1" 200 115
+WARNING 2025-08-27 13:02:35,172 log 19384 14080 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:02:35,173 basehttp 19384 14080 "POST /api/auth/login/ HTTP/1.1" 403 45
+WARNING 2025-08-27 13:02:45,863 log 19384 14080 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:02:45,865 basehttp 19384 14080 "POST /api/auth/login/ HTTP/1.1" 403 45
+INFO 2025-08-27 13:03:34,324 basehttp 19384 7784 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+WARNING 2025-08-27 13:03:34,385 log 19384 14080 Forbidden: /api/auth/register/
+WARNING 2025-08-27 13:03:34,386 basehttp 19384 14080 "POST /api/auth/register/ HTTP/1.1" 403 45
+WARNING 2025-08-27 13:03:47,505 log 19384 14080 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:03:47,506 basehttp 19384 14080 "POST /api/auth/login/ HTTP/1.1" 403 45
+INFO 2025-08-27 13:04:53,188 autoreload 19384 17732 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 13:04:55,097 autoreload 16528 4176 Watching for file changes with StatReloader
+INFO 2025-08-27 13:05:00,863 views 16528 4176 Using simple mistral client for better performance
+INFO 2025-08-27 13:05:23,752 autoreload 16528 4176 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 13:05:25,981 autoreload 18656 18540 Watching for file changes with StatReloader
+INFO 2025-08-27 13:05:30,718 views 18656 18540 Using simple mistral client for better performance
+INFO 2025-08-27 13:05:47,457 autoreload 11120 19392 Watching for file changes with StatReloader
+INFO 2025-08-27 13:05:52,287 views 11120 19392 Using simple mistral client for better performance
+INFO 2025-08-27 13:06:22,050 basehttp 11120 18128 "POST /api/auth/login/ HTTP/1.1" 200 358
+WARNING 2025-08-27 13:06:34,445 log 11120 17256 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:06:34,446 basehttp 11120 17256 "POST /api/auth/login/ HTTP/1.1" 403 45
+WARNING 2025-08-27 13:06:53,067 log 11120 17256 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:06:53,068 basehttp 11120 17256 "POST /api/auth/login/ HTTP/1.1" 403 45
+INFO 2025-08-27 13:06:59,429 views 11120 14036 Registration attempt with data: {'name': 'Test User', 'email': 'test123@example.com', 'user_type': 'CLIENT', 'password': 'testpass123', 'password_confirm': 'testpass123'}
+INFO 2025-08-27 13:06:59,901 basehttp 11120 14036 "POST /api/auth/register/ HTTP/1.1" 201 354
+WARNING 2025-08-27 13:07:17,468 log 11120 17256 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:07:17,469 basehttp 11120 17256 "POST /api/auth/login/ HTTP/1.1" 403 45
+WARNING 2025-08-27 13:07:23,664 log 11120 17256 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:07:23,665 basehttp 11120 17256 "POST /api/auth/login/ HTTP/1.1" 403 45
+WARNING 2025-08-27 13:08:00,590 log 11120 17256 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:08:00,591 basehttp 11120 17256 "POST /api/auth/login/ HTTP/1.1" 403 45
+WARNING 2025-08-27 13:09:38,988 log 11120 17256 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:09:38,989 basehttp 11120 17256 "POST /api/auth/login/ HTTP/1.1" 403 45
+INFO 2025-08-27 13:09:43,530 autoreload 11120 19392 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 13:09:46,093 autoreload 17656 4584 Watching for file changes with StatReloader
+INFO 2025-08-27 13:09:51,535 views 17656 4584 Using simple mistral client for better performance
+INFO 2025-08-27 13:10:00,661 autoreload 17656 4584 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 13:10:01,888 autoreload 16104 16744 Watching for file changes with StatReloader
+INFO 2025-08-27 13:10:07,107 views 16104 16744 Using simple mistral client for better performance
+INFO 2025-08-27 13:10:31,745 autoreload 18508 15132 Watching for file changes with StatReloader
+INFO 2025-08-27 13:10:36,779 views 18508 15132 Using simple mistral client for better performance
+INFO 2025-08-27 13:11:02,553 basehttp 18508 14784 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:11:13,150 basehttp 18508 6136 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:11:22,543 basehttp 18508 2460 "POST /api/quote/ HTTP/1.1" 200 115
+WARNING 2025-08-27 13:11:47,107 log 18508 15608 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:11:47,107 basehttp 18508 15608 "POST /api/auth/login/ HTTP/1.1" 403 108
+INFO 2025-08-27 13:11:55,993 autoreload 18508 15132 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 13:11:57,307 autoreload 4060 17432 Watching for file changes with StatReloader
+INFO 2025-08-27 13:12:03,337 views 4060 17432 Using simple mistral client for better performance
+WARNING 2025-08-27 13:12:18,540 log 4060 6872 Forbidden: /api/quote/
+WARNING 2025-08-27 13:12:18,542 basehttp 4060 6872 "POST /api/quote/ HTTP/1.1" 403 108
+WARNING 2025-08-27 13:12:18,644 log 4060 11400 Forbidden: /api/quote/
+WARNING 2025-08-27 13:12:18,647 basehttp 4060 11400 "POST /api/quote/ HTTP/1.1" 403 108
+WARNING 2025-08-27 13:12:47,576 log 4060 11400 Forbidden: /api/auth/register/
+WARNING 2025-08-27 13:12:47,577 basehttp 4060 11400 "POST /api/auth/register/ HTTP/1.1" 403 108
+WARNING 2025-08-27 13:13:35,962 log 4060 11400 Forbidden: /api/auth/login/
+WARNING 2025-08-27 13:13:35,962 basehttp 4060 11400 "POST /api/auth/login/ HTTP/1.1" 403 108
+INFO 2025-08-27 13:14:16,020 autoreload 4060 17432 C:\Users\USER\Desktop\bhagent\bhagent\settings.py changed, reloading.
+INFO 2025-08-27 13:14:18,049 autoreload 12724 6992 Watching for file changes with StatReloader
+INFO 2025-08-27 13:14:24,541 views 12724 6992 Using simple mistral client for better performance
+INFO 2025-08-27 13:14:26,430 basehttp 12724 18312 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:14:26,561 basehttp 12724 18312 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:14:44,603 autoreload 3320 15124 Watching for file changes with StatReloader
+INFO 2025-08-27 13:14:51,417 views 3320 15124 Using simple mistral client for better performance
+ERROR 2025-08-27 13:15:07,480 log 3320 4464 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « user_sessions_session_key_key »
+DETAIL:  La clé « (session_key)=(tus014c1gqzw6u99k6vpd63dt851hnr7) » existe déjà.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\authentication\views.py", line 103, in login_user
+    UserSession.objects.create(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=user,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        user_agent=request.META.get('HTTP_USER_AGENT', '')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « user_sessions_session_key_key »
+DETAIL:  La clé « (session_key)=(tus014c1gqzw6u99k6vpd63dt851hnr7) » existe déjà.
+
+ERROR 2025-08-27 13:15:07,488 basehttp 3320 4464 "POST /api/auth/login/ HTTP/1.1" 500 205114
+INFO 2025-08-27 13:15:14,681 basehttp 3320 332 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:15:23,265 basehttp 3320 19072 "POST /api/auth/login/ HTTP/1.1" 200 358
+ERROR 2025-08-27 13:15:26,661 log 3320 4464 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « user_sessions_session_key_key »
+DETAIL:  La clé « (session_key)=(tus014c1gqzw6u99k6vpd63dt851hnr7) » existe déjà.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\bhagent\authentication\views.py", line 103, in login_user
+    UserSession.objects.create(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=user,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        user_agent=request.META.get('HTTP_USER_AGENT', '')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « user_sessions_session_key_key »
+DETAIL:  La clé « (session_key)=(tus014c1gqzw6u99k6vpd63dt851hnr7) » existe déjà.
+
+ERROR 2025-08-27 13:15:26,665 basehttp 3320 4464 "POST /api/auth/login/ HTTP/1.1" 500 205130
+INFO 2025-08-27 13:15:31,801 basehttp 3320 4464 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:15:31,827 basehttp 3320 7616 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:15:37,701 views 3320 11456 Registration attempt with data: {'name': 'Test User 2', 'email': 'test456@example.com', 'user_type': 'CLIENT', 'password': 'testpass123', 'password_confirm': 'testpass123'}
+INFO 2025-08-27 13:15:39,159 basehttp 3320 11456 "POST /api/auth/register/ HTTP/1.1" 201 356
+INFO 2025-08-27 13:16:28,147 autoreload 3320 15124 C:\Users\USER\Desktop\bhagent\authentication\views.py changed, reloading.
+INFO 2025-08-27 13:16:29,404 autoreload 15184 12500 Watching for file changes with StatReloader
+INFO 2025-08-27 13:16:34,417 views 15184 12500 Using simple mistral client for better performance
+INFO 2025-08-27 13:17:57,446 basehttp 15184 19080 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:20:44,886 basehttp 15184 18076 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:20:44,983 basehttp 15184 18076 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:20:51,232 basehttp 15184 18076 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:20:51,244 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:20:55,670 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 104
+INFO 2025-08-27 13:21:03,220 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 134
+INFO 2025-08-27 13:21:10,942 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 157
+INFO 2025-08-27 13:21:17,698 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 156
+INFO 2025-08-27 13:21:22,131 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 194
+INFO 2025-08-27 13:21:28,493 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 216
+INFO 2025-08-27 13:21:42,250 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 265
+INFO 2025-08-27 13:21:53,375 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 312
+INFO 2025-08-27 13:22:03,900 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 307
+INFO 2025-08-27 13:22:10,918 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:22:38,274 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 5552
+INFO 2025-08-27 13:23:08,368 basehttp 15184 19396 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+INFO 2025-08-27 13:23:08,449 basehttp 15184 18792 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 13:23:12,358 basehttp 15184 18792 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:23:12,469 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:25:49,474 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:25:49,535 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:29:12,962 basehttp 15184 18792 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 13:29:16,449 basehttp 15184 18792 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:29:16,637 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:29:27,294 basehttp 15184 18792 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 13:30:40,055 basehttp 15184 18792 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 13:30:40,204 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:32:47,956 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:32:48,060 basehttp 15184 18792 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:33:45,381 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:33:45,511 basehttp 15184 18792 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:39:59,816 autoreload 15184 12500 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-27 13:40:01,394 autoreload 15180 9524 Watching for file changes with StatReloader
+INFO 2025-08-27 13:40:06,157 views 15180 9524 Using simple mistral client for better performance
+INFO 2025-08-27 13:40:19,358 autoreload 15180 9524 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-27 13:40:20,980 autoreload 2440 11624 Watching for file changes with StatReloader
+INFO 2025-08-27 13:40:25,219 views 2440 11624 Using simple mistral client for better performance
+INFO 2025-08-27 13:40:35,181 autoreload 2440 11624 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-27 13:40:36,296 autoreload 4500 2220 Watching for file changes with StatReloader
+INFO 2025-08-27 13:40:40,384 views 4500 2220 Using simple mistral client for better performance
+INFO 2025-08-27 13:43:33,878 basehttp 4500 20040 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:43:33,970 basehttp 4500 20040 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:44:33,684 basehttp 4500 20040 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:44:33,691 basehttp 4500 18368 "POST /api/quote/ HTTP/1.1" 200 115
+INFO 2025-08-27 13:45:05,950 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:45:05,997 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:45:22,256 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:45:22,302 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:47:35,014 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:47:35,059 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:48:18,007 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:48:18,071 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:52:59,951 autoreload 4500 2220 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-27 13:53:01,227 autoreload 17444 19284 Watching for file changes with StatReloader
+INFO 2025-08-27 13:53:05,338 views 17444 19284 Using simple mistral client for better performance

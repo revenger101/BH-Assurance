@@ -14,7 +14,7 @@ SESSION_KEY = "quote_flow_state"
 
 @method_decorator(csrf_exempt, name='dispatch')
 class QuoteView(APIView):
-    permission_classes = [AllowAny]  # Let anyone start the quote flow
+    permission_classes = [AllowAny]  
     throttle_scope = 'quote'
 
     def post(self, request):
@@ -72,42 +72,94 @@ class QuoteView(APIView):
 
         # Proceed to build devis (authenticated user)
         payload = collected.copy()
+        produit = payload.get("produit", "").lower()
 
-        quote_api_url = getattr(settings, "QUOTE_API_URL", None)
-        if quote_api_url:
-            headers = {"Content-Type": "application/json"}
-            # Forward auth token if present (optional)
-            auth = request.headers.get("Authorization")
-            if auth:
-                headers["Authorization"] = auth
+        # Handle AUTO insurance with real API
+        if produit == "auto":
+            auto_api_url = "https://apidevis.onrender.com/api/auto/packs"
             try:
-                r = requests.post(quote_api_url, json=payload, headers=headers, timeout=20)
+                # Build query parameters for the auto API
+                params = {
+                    "n_cin": payload.get("n_cin"),
+                    "valeur_venale": payload.get("valeur_venale"),
+                    "nature_contrat": payload.get("nature_contrat"),
+                    "nombre_place": payload.get("nombre_place"),
+                    "valeur_a_neuf": payload.get("valeur_a_neuf"),
+                    "date_premiere_mise_en_circulation": payload.get("date_premiere_mise_en_circulation"),
+                    "capital_bris_de_glace": payload.get("capital_bris_de_glace"),
+                    "capital_dommage_collision": payload.get("capital_dommage_collision"),
+                    "puissance": payload.get("puissance"),
+                    "classe": payload.get("classe"),
+                }
+
+                # Make GET request to the real auto API
+                r = requests.get(auto_api_url, params=params, timeout=30)
                 r.raise_for_status()
-                dev = r.json()
+                api_response = r.json()
+
+                # Format the response for our frontend
+                dev = {
+                    "produit": "auto",
+                    "source": "api_externe",
+                    "api_response": api_response,
+                    "parametres": payload,
+                    "message": "Devis auto généré via API externe",
+                    "api_url": auto_api_url
+                }
+
             except Exception as e:
                 # Fallback to simulated quote on API failure
                 dev = simulate_quote(payload)
-                dev["note"] = f"API indisponible, devis simulé localement ({e})"
+                dev["note"] = f"API externe indisponible, devis simulé localement. Erreur: {str(e)}"
+                dev["api_error"] = str(e)
         else:
-            dev = simulate_quote(payload)
+            # For other products, use local simulation or configured API
+            quote_api_url = getattr(settings, "QUOTE_API_URL", None)
+            if quote_api_url:
+                headers = {"Content-Type": "application/json"}
+                auth = request.headers.get("Authorization")
+                if auth:
+                    headers["Authorization"] = auth
+                try:
+                    r = requests.post(quote_api_url, json=payload, headers=headers, timeout=20)
+                    r.raise_for_status()
+                    dev = r.json()
+                except Exception as e:
+                    dev = simulate_quote(payload)
+                    dev["note"] = f"API indisponible, devis simulé localement ({e})"
+            else:
+                dev = simulate_quote(payload)
 
         # Persist the quote request (authenticated user guaranteed)
         try:
+            # Determine source
+            if produit == "auto" and "api_response" in dev:
+                source = 'api_externe'
+            elif "note" in dev and "API indisponible" in dev["note"]:
+                source = 'simulated'
+            else:
+                source = 'api'
+
             QuoteRequest.objects.create(
                 user=request.user,
                 produit=payload["produit"],
-                age=payload["age"],
-                capital=payload["capital"],
-                duree=payload["duree"],
-                fumeur=payload["fumeur"],
+                collected_data=payload,
+                # Legacy fields for backward compatibility
+                age=payload.get("age"),
+                capital=payload.get("capital", payload.get("valeur_venale")),
+                duree=payload.get("duree"),
+                fumeur=payload.get("fumeur"),
                 devis=dev,
-                source='api' if quote_api_url else 'simulated',
+                source=source,
                 session_key=getattr(request.session, 'session_key', ''),
                 user_agent=request.META.get('HTTP_USER_AGENT', ''),
                 ip_address=request.META.get('REMOTE_ADDR', ''),
             )
-        except Exception:
-            # Non-fatal if persistence fails
+        except Exception as e:
+            # Non-fatal if persistence fails, but log it
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.warning(f"Failed to persist quote request: {e}")
             pass
 
         # Mark flow complete and return the quote

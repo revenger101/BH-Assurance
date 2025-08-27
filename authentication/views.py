@@ -29,6 +29,10 @@ from .utils import get_client_ip, send_verification_email, send_password_reset_e
 @permission_classes([permissions.AllowAny])
 def register_user(request):
     """Register a new user"""
+    import logging
+    logger = logging.getLogger(__name__)
+
+    logger.info(f"Registration attempt with data: {request.data}")
     serializer = UserRegistrationSerializer(data=request.data)
 
     if serializer.is_valid():
@@ -62,6 +66,7 @@ def register_user(request):
             }
         }, status=status.HTTP_201_CREATED)
 
+    logger.error(f"Registration validation failed: {serializer.errors}")
     return Response({
         'success': False,
         'message': 'Registration failed',
@@ -95,12 +100,23 @@ def login_user(request):
         # Deactivate old sessions (optional - for single session per user)
         # UserSession.objects.filter(user=user, is_active=True).update(is_active=False)
 
-        UserSession.objects.create(
-            user=user,
+        # Create or update user session
+        user_session, created = UserSession.objects.get_or_create(
             session_key=session_key,
-            ip_address=get_client_ip(request),
-            user_agent=request.META.get('HTTP_USER_AGENT', '')
+            defaults={
+                'user': user,
+                'ip_address': get_client_ip(request),
+                'user_agent': request.META.get('HTTP_USER_AGENT', ''),
+                'is_active': True
+            }
         )
+        if not created:
+            # Update existing session
+            user_session.user = user
+            user_session.ip_address = get_client_ip(request)
+            user_session.user_agent = request.META.get('HTTP_USER_AGENT', '')
+            user_session.is_active = True
+            user_session.save()
 
         # Django login
         login(request, user)

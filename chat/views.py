@@ -20,14 +20,19 @@ CONFIDENTIAL_KEYWORDS = {
     "contrat", "numéro de contrat", "n° contrat", "dossier", "sinistre", "iban", "rib",
     "cin", "carte d'identité", "passeport", "adresse", "email", "téléphone", "tél",
     "identifiant", "id client", "code secret", "mot de passe", "historique", "profil",
+    "profession", "métier", "salaire", "revenus", "naissance", "né", "marié", "célibataire",
     # English
     "contract", "policy", "policy number", "claim", "iban", "passport", "address",
     "email", "phone", "identifier", "id", "password", "account", "profile",
+    "profession", "job", "salary", "income", "birthdate", "born", "married", "single",
 }
 
 EMAIL_REGEX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 PHONE_REGEX = re.compile(r"(?:\+?\d[\s-]?){8,15}")
 POLICY_CONTEXT_REGEX = re.compile(r"(?i)(policy|contrat).{0,20}\b(\d{6,})")
+# Client name patterns - questions about specific people
+CLIENT_NAME_REGEX = re.compile(r"(?i)(what is the|quelle est la|who is|tell me about|information about).{0,50}(profession|métier|birthdate|naissance|income|revenus|salary|salaire).{0,20}([A-Z][a-z]+ [A-Z][a-z]+ [A-Z][a-z]+)")
+CLIENT_QUESTION_REGEX = re.compile(r"(?i)(what is the profession of|quelle est la profession de|who is|tell me about) ([A-Z][a-z]+ [A-Z][a-z]+ [A-Z][a-z]+ [A-Z][a-z]+)")
 
 
 def detect_confidential_query(text: str) -> dict:
@@ -46,6 +51,12 @@ def detect_confidential_query(text: str) -> dict:
         matched.add("phone-pattern")
     if POLICY_CONTEXT_REGEX.search(text or ""):
         matched.add("policy-number")
+
+    # Client data patterns - questions about specific people are confidential
+    if CLIENT_NAME_REGEX.search(text or ""):
+        matched.add("client-personal-data")
+    if CLIENT_QUESTION_REGEX.search(text or ""):
+        matched.add("client-identity-query")
 
     return {
         "is_confidential": len(matched) > 0,
@@ -112,7 +123,7 @@ class ChatView(APIView):
             - "Je suis à votre disposition pour toute question supplémentaire."
 
             Question de l'utilisateur: {user_message}"""
-            response_text = chat_completion(enhanced_message, max_tokens=120)
+            response_text = chat_completion(enhanced_message, max_tokens=120, is_authenticated=is_auth)
 
             # Post-process response for Jarvis-like speech
             response_text = response_text.replace("**", "").replace("*", "")
@@ -120,7 +131,7 @@ class ChatView(APIView):
             response_text = response_text.replace(". ", ". ... ")
             response_text = response_text.replace(", ", ", ... ")
         else:
-            response_text = chat_completion(user_message, max_tokens=120)
+            response_text = chat_completion(user_message, max_tokens=120, is_authenticated=is_auth)
 
         # Log response time
         response_time = time.time() - start_time

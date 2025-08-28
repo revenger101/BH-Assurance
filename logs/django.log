@@ -1729,3 +1729,173 @@ INFO 2025-08-27 13:48:18,071 basehttp 4500 18368 "GET /api/auth/profile/ HTTP/1.
 INFO 2025-08-27 13:52:59,951 autoreload 4500 2220 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
 INFO 2025-08-27 13:53:01,227 autoreload 17444 19284 Watching for file changes with StatReloader
 INFO 2025-08-27 13:53:05,338 views 17444 19284 Using simple mistral client for better performance
+INFO 2025-08-27 13:54:05,430 basehttp 17444 20100 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:54:05,476 basehttp 17444 20100 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:54:41,098 views 17444 19200 Chat request received (len=35, voice=True)
+INFO 2025-08-27 13:54:44,561 modeling 17444 19200 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-27 13:55:07,242 big_modeling 17444 19200 Some parameters are on the meta device because they were offloaded to the cpu and disk.
+INFO 2025-08-27 13:56:13,790 views 17444 15012 Chat request received (len=7, voice=True)
+INFO 2025-08-27 13:58:26,322 basehttp 17444 18100 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 13:58:26,386 basehttp 17444 18100 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:09:25,493 views 17444 15012 Response generated in 791.70s (voice=True)
+INFO 2025-08-27 14:09:25,495 basehttp 17444 15012 - Broken pipe from ('127.0.0.1', 55900)
+INFO 2025-08-27 14:11:15,761 views 17444 19200 Response generated in 994.66s (voice=True)
+INFO 2025-08-27 14:11:15,762 basehttp 17444 19200 - Broken pipe from ('127.0.0.1', 55863)
+INFO 2025-08-27 14:11:43,874 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:11:43,917 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:12:48,918 basehttp 17444 11512 "OPTIONS /api/chat/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:12:49,225 views 17444 20020 Chat request received (len=15, voice=True)
+INFO 2025-08-27 14:12:58,867 views 17444 18740 Chat request received (len=48, voice=True)
+INFO 2025-08-27 14:13:06,605 views 17444 17628 Chat request received (len=43, voice=True)
+WARNING 2025-08-27 14:13:06,615 log 17444 17628 Unauthorized: /api/chat/
+WARNING 2025-08-27 14:13:06,616 basehttp 17444 17628 "POST /api/chat/ HTTP/1.1" 401 395
+INFO 2025-08-27 14:13:25,077 views 17444 17628 Chat request received (len=42, voice=True)
+WARNING 2025-08-27 14:13:25,079 log 17444 17628 Unauthorized: /api/chat/
+WARNING 2025-08-27 14:13:25,080 basehttp 17444 17628 "POST /api/chat/ HTTP/1.1" 401 395
+INFO 2025-08-27 14:13:30,834 views 17444 17628 Chat request received (len=8, voice=True)
+INFO 2025-08-27 14:13:38,198 views 17444 8528 Chat request received (len=26, voice=True)
+WARNING 2025-08-27 14:13:38,199 log 17444 8528 Unauthorized: /api/chat/
+WARNING 2025-08-27 14:13:38,199 basehttp 17444 8528 "POST /api/chat/ HTTP/1.1" 401 395
+INFO 2025-08-27 14:14:54,920 views 17444 8528 Chat request received (len=8, voice=True)
+INFO 2025-08-27 14:15:02,264 views 17444 20180 Chat request received (len=8, voice=True)
+INFO 2025-08-27 14:15:11,150 basehttp 17444 7752 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 14:15:14,239 views 17444 20020 Response generated in 145.01s (voice=True)
+INFO 2025-08-27 14:15:14,240 basehttp 17444 20020 - Broken pipe from ('127.0.0.1', 56379)
+INFO 2025-08-27 14:15:22,132 basehttp 17444 11512 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:15:23,044 basehttp 17444 15408 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 14:15:23,054 basehttp 17444 11512 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:15:23,123 basehttp 17444 15408 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:15:40,884 basehttp 17444 7752 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 14:15:40,981 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:16:55,760 views 17444 18740 Response generated in 236.89s (voice=True)
+INFO 2025-08-27 14:16:55,762 basehttp 17444 18740 - Broken pipe from ('127.0.0.1', 56380)
+INFO 2025-08-27 14:19:34,194 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:19:34,324 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:20:02,898 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:20:03,009 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:20:19,426 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:20:19,751 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:21:18,850 basehttp 17444 7752 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 14:21:47,360 basehttp 17444 7752 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 14:21:47,467 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:22:24,659 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:22:24,771 basehttp 17444 7752 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:23:21,605 views 17444 8528 Response generated in 506.69s (voice=True)
+INFO 2025-08-27 14:23:21,607 basehttp 17444 8528 - Broken pipe from ('127.0.0.1', 56405)
+INFO 2025-08-27 14:23:21,652 basehttp 17444 3000 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:23:21,654 basehttp 17444 20460 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+WARNING 2025-08-27 14:23:22,025 log 17444 19524 Unauthorized: /api/auth/profile/
+WARNING 2025-08-27 14:23:22,027 basehttp 17444 19524 "GET /api/auth/profile/ HTTP/1.1" 401 27
+WARNING 2025-08-27 14:23:22,092 log 17444 19524 Unauthorized: /api/auth/profile/
+WARNING 2025-08-27 14:23:22,094 basehttp 17444 19524 "GET /api/auth/profile/ HTTP/1.1" 401 27
+INFO 2025-08-27 14:23:27,683 basehttp 17444 20460 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:23:28,733 basehttp 17444 19524 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 14:23:28,808 basehttp 17444 19524 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:24:10,387 basehttp 17444 20460 "OPTIONS /api/chat/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:24:10,481 views 17444 19524 Chat request received (len=8, voice=True)
+INFO 2025-08-27 14:24:10,495 views 17444 19524 Response generated in 0.01s (voice=True)
+INFO 2025-08-27 14:24:10,499 basehttp 17444 19524 "POST /api/chat/ HTTP/1.1" 200 190
+INFO 2025-08-27 14:24:20,584 views 17444 19524 Chat request received (len=41, voice=True)
+INFO 2025-08-27 14:24:34,231 views 17444 19524 Response generated in 13.65s (voice=True)
+INFO 2025-08-27 14:24:34,233 basehttp 17444 19524 "POST /api/chat/ HTTP/1.1" 200 191
+INFO 2025-08-27 14:24:43,330 basehttp 17444 20460 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+INFO 2025-08-27 14:24:43,536 basehttp 17444 19524 "POST /api/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-27 14:24:47,146 basehttp 17444 19524 "POST /api/auth/login/ HTTP/1.1" 200 358
+INFO 2025-08-27 14:24:47,211 basehttp 17444 19524 "GET /api/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-08-27 14:24:56,220 views 17444 20180 Response generated in 593.96s (voice=True)
+INFO 2025-08-27 14:24:56,222 basehttp 17444 20180 - Broken pipe from ('127.0.0.1', 56476)
+INFO 2025-08-27 14:25:05,255 views 17444 17628 Response generated in 694.42s (voice=True)
+INFO 2025-08-27 14:25:05,257 basehttp 17444 17628 - Broken pipe from ('127.0.0.1', 56390)
+INFO 2025-08-28 10:40:08,083 autoreload 10320 13232 Watching for file changes with StatReloader
+INFO 2025-08-28 10:40:51,868 views 10320 13232 Using simple mistral client for better performance
+INFO 2025-08-28 10:41:25,151 views 10320 4692 Chat request received (len=45, voice=False)
+INFO 2025-08-28 10:41:28,193 modeling 10320 4692 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-28 10:41:51,330 big_modeling 10320 4692 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-28 10:46:02,864 views 10320 4692 Response generated in 277.71s (voice=False)
+INFO 2025-08-28 10:46:02,866 basehttp 10320 4692 "POST /api/chat/ HTTP/1.1" 200 397
+INFO 2025-08-28 10:49:27,057 views 10320 10804 Chat request received (len=64, voice=False)
+INFO 2025-08-28 10:51:08,221 views 10320 10804 Response generated in 101.16s (voice=False)
+INFO 2025-08-28 10:51:08,223 basehttp 10320 10804 "POST /api/chat/ HTTP/1.1" 200 214
+INFO 2025-08-28 10:51:21,914 views 10320 15592 Chat request received (len=64, voice=False)
+INFO 2025-08-28 10:51:21,923 views 10320 15592 Response generated in 0.01s (voice=False)
+INFO 2025-08-28 10:51:21,924 basehttp 10320 15592 "POST /api/chat/ HTTP/1.1" 200 212
+INFO 2025-08-28 10:52:22,971 views 10320 18364 Chat request received (len=27, voice=False)
+INFO 2025-08-28 10:59:02,829 views 10320 18364 Response generated in 399.86s (voice=False)
+INFO 2025-08-28 10:59:02,831 basehttp 10320 18364 "POST /api/chat/ HTTP/1.1" 200 513
+INFO 2025-08-28 11:01:10,393 views 10320 3104 Chat request received (len=54, voice=False)
+INFO 2025-08-28 11:03:50,020 views 10320 3104 Response generated in 159.63s (voice=False)
+INFO 2025-08-28 11:03:50,022 basehttp 10320 3104 "POST /api/chat/ HTTP/1.1" 200 278
+INFO 2025-08-28 11:10:01,703 views 10320 9844 Chat request received (len=44, voice=False)
+WARNING 2025-08-28 11:10:01,721 log 10320 9844 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:10:01,723 basehttp 10320 9844 "POST /api/chat/ HTTP/1.1" 401 416
+INFO 2025-08-28 11:10:17,150 views 10320 9844 Chat request received (len=36, voice=False)
+WARNING 2025-08-28 11:10:17,151 log 10320 9844 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:10:17,151 basehttp 10320 9844 "POST /api/chat/ HTTP/1.1" 401 395
+INFO 2025-08-28 11:22:28,402 autoreload 10320 13232 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-28 11:22:33,759 autoreload 17732 18108 Watching for file changes with StatReloader
+INFO 2025-08-28 11:22:48,278 views 17732 18108 Using simple mistral client for better performance
+INFO 2025-08-28 11:23:04,904 autoreload 17732 18108 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-28 11:23:06,408 autoreload 15044 17008 Watching for file changes with StatReloader
+INFO 2025-08-28 11:23:13,222 views 15044 17008 Using simple mistral client for better performance
+INFO 2025-08-28 11:33:12,520 views 15044 14576 Chat request received (len=54, voice=False)
+INFO 2025-08-28 11:33:12,538 simple_mistral_client 15044 14576 Client lookup found: What is the profession of Ben Ali El Amri Ahmed Sa...
+INFO 2025-08-28 11:33:12,539 views 15044 14576 Response generated in 0.02s (voice=False)
+INFO 2025-08-28 11:33:12,545 basehttp 15044 14576 "POST /api/chat/ HTTP/1.1" 200 127
+INFO 2025-08-28 11:33:44,504 views 15044 14576 Chat request received (len=58, voice=False)
+INFO 2025-08-28 11:33:44,507 simple_mistral_client 15044 14576 Client lookup found: What is the marital status of Ben Ali El Amri Ahme...
+INFO 2025-08-28 11:33:44,508 views 15044 14576 Response generated in 0.00s (voice=False)
+INFO 2025-08-28 11:33:44,508 basehttp 15044 14576 "POST /api/chat/ HTTP/1.1" 200 124
+INFO 2025-08-28 11:33:56,911 views 15044 14576 Chat request received (len=64, voice=False)
+INFO 2025-08-28 11:33:56,914 simple_mistral_client 15044 14576 Client lookup found: What is the marital status of Ben Youssef Ben Hass...
+INFO 2025-08-28 11:33:56,914 views 15044 14576 Response generated in 0.00s (voice=False)
+INFO 2025-08-28 11:33:56,915 basehttp 15044 14576 "POST /api/chat/ HTTP/1.1" 200 122
+INFO 2025-08-28 11:34:00,671 autoreload 15044 17008 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-28 11:34:02,507 autoreload 16520 5328 Watching for file changes with StatReloader
+INFO 2025-08-28 11:34:13,913 views 16520 5328 Using simple mistral client for better performance
+WARNING 2025-08-28 11:34:20,443 log 16520 13948 Bad Request: /api/chat/
+WARNING 2025-08-28 11:34:20,443 basehttp 16520 13948 "POST /api/chat/ HTTP/1.1" 400 83
+INFO 2025-08-28 11:34:22,445 autoreload 16520 5328 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-28 11:34:24,019 autoreload 17436 12636 Watching for file changes with StatReloader
+INFO 2025-08-28 11:34:31,535 views 17436 12636 Using simple mistral client for better performance
+INFO 2025-08-28 11:34:39,998 autoreload 17436 12636 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-28 11:34:41,520 autoreload 16952 17176 Watching for file changes with StatReloader
+INFO 2025-08-28 11:34:49,777 views 16952 17176 Using simple mistral client for better performance
+INFO 2025-08-28 11:34:59,348 autoreload 16952 17176 C:\Users\USER\Desktop\bhagent\chat\simple_mistral_client.py changed, reloading.
+INFO 2025-08-28 11:35:00,940 autoreload 2912 3464 Watching for file changes with StatReloader
+INFO 2025-08-28 11:35:08,378 views 2912 3464 Using simple mistral client for better performance
+INFO 2025-08-28 11:35:24,986 autoreload 2912 3464 C:\Users\USER\Desktop\bhagent\chat\views.py changed, reloading.
+INFO 2025-08-28 11:35:26,556 autoreload 14180 10508 Watching for file changes with StatReloader
+INFO 2025-08-28 11:35:33,997 views 14180 10508 Using simple mistral client for better performance
+INFO 2025-08-28 11:36:18,967 views 14180 16492 Chat request received (len=54, voice=False)
+WARNING 2025-08-28 11:36:18,969 log 14180 16492 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:36:18,970 basehttp 14180 16492 "POST /api/chat/ HTTP/1.1" 401 445
+INFO 2025-08-28 11:36:20,999 views 14180 16776 Chat request received (len=56, voice=False)
+WARNING 2025-08-28 11:36:21,000 log 14180 16776 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:36:21,001 basehttp 14180 16776 "POST /api/chat/ HTTP/1.1" 401 445
+INFO 2025-08-28 11:36:23,035 views 14180 11696 Chat request received (len=53, voice=False)
+WARNING 2025-08-28 11:36:23,036 log 14180 11696 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:36:23,037 basehttp 14180 11696 "POST /api/chat/ HTTP/1.1" 401 420
+INFO 2025-08-28 11:36:25,074 views 14180 15136 Chat request received (len=35, voice=False)
+WARNING 2025-08-28 11:36:25,075 log 14180 15136 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:36:25,075 basehttp 14180 15136 "POST /api/chat/ HTTP/1.1" 401 409
+INFO 2025-08-28 11:36:27,132 views 14180 10448 Chat request received (len=41, voice=False)
+WARNING 2025-08-28 11:36:27,133 log 14180 10448 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:36:27,133 basehttp 14180 10448 "POST /api/chat/ HTTP/1.1" 401 409
+INFO 2025-08-28 11:36:29,180 views 14180 5500 Chat request received (len=58, voice=False)
+WARNING 2025-08-28 11:36:29,181 log 14180 5500 Unauthorized: /api/chat/
+WARNING 2025-08-28 11:36:29,183 basehttp 14180 5500 "POST /api/chat/ HTTP/1.1" 401 417
+INFO 2025-08-28 11:36:30,842 views 14180 12072 Chat request received (len=50, voice=False)
+INFO 2025-08-28 11:36:31,222 views 14180 16972 Chat request received (len=58, voice=False)
+INFO 2025-08-28 11:36:31,242 views 14180 16972 Response generated in 0.02s (voice=False)
+INFO 2025-08-28 11:36:31,244 basehttp 14180 16972 "POST /api/chat/ HTTP/1.1" 200 219
+INFO 2025-08-28 11:36:33,275 views 14180 17828 Chat request received (len=21, voice=False)
+INFO 2025-08-28 11:36:33,550 modeling 14180 12072 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+INFO 2025-08-28 11:36:34,283 modeling 14180 17828 We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+WARNING 2025-08-28 11:37:14,046 big_modeling 14180 12072 Some parameters are on the meta device because they were offloaded to the cpu.
+WARNING 2025-08-28 11:37:14,071 big_modeling 14180 17828 Some parameters are on the meta device because they were offloaded to the cpu.
+INFO 2025-08-28 11:49:04,431 views 14180 15260 Chat request received (len=50, voice=False)
+INFO 2025-08-28 11:57:20,549 views 14180 15260 Response generated in 496.12s (voice=False)
+INFO 2025-08-28 11:57:20,614 basehttp 14180 15260 "POST /api/chat/ HTTP/1.1" 200 186
+INFO 2025-08-28 12:00:54,753 views 14180 13392 Chat request received (len=50, voice=False)
+INFO 2025-08-28 12:00:54,955 views 14180 13392 Response generated in 0.22s (voice=False)
+INFO 2025-08-28 12:00:54,969 basehttp 14180 13392 "POST /api/chat/ HTTP/1.1" 200 184

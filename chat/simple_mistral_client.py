@@ -9,6 +9,18 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 import time
 import logging
+import os
+import sys
+
+# Add current directory to path for imports
+sys.path.append(os.path.dirname(__file__))
+
+try:
+    from client_lookup_service import ClientLookupService
+    CLIENT_LOOKUP_AVAILABLE = True
+except ImportError:
+    CLIENT_LOOKUP_AVAILABLE = False
+    print("⚠️ Client lookup service not available")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -21,6 +33,16 @@ BASE_MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.1"
 _tokenizer = None
 _model = None
 _model_loaded = False
+
+# Initialize client lookup service
+_client_lookup = None
+if CLIENT_LOOKUP_AVAILABLE:
+    try:
+        _client_lookup = ClientLookupService()
+        print("✅ Client lookup service initialized")
+    except Exception as e:
+        print(f"⚠️ Failed to initialize client lookup: {e}")
+        _client_lookup = None
 
 def load_simple_model():
     """Load base model with simple, reliable configuration"""
@@ -151,9 +173,30 @@ def cached_chat_completion(prompt, max_tokens=60, temperature=0.6):
     
     return response
 
-# Main function for compatibility
-def chat_completion(prompt, max_tokens=60, temperature=0.6):
-    """Main chat completion function with caching"""
+# Main function for compatibility with client lookup
+def chat_completion(prompt, max_tokens=60, temperature=0.6, is_authenticated=False):
+    """Enhanced chat completion function with confidential client lookup"""
+
+    # Only use client lookup if user is authenticated
+    if _client_lookup and is_authenticated:
+        try:
+            client_info = _client_lookup.search_client(prompt)
+            if client_info:
+                logger.info(f"🔐 Authenticated client lookup: {prompt[:50]}...")
+                return client_info
+        except Exception as e:
+            logger.warning(f"Client lookup error: {e}")
+    elif _client_lookup and not is_authenticated:
+        # Check if this looks like a client query
+        try:
+            client_info = _client_lookup.search_client(prompt)
+            if client_info:
+                logger.warning(f"🚫 Unauthenticated client query blocked: {prompt[:50]}...")
+                return "Cette information est confidentielle. Veuillez vous authentifier pour accéder aux données clients."
+        except Exception as e:
+            pass
+
+    # Fall back to AI model for general questions
     return cached_chat_completion(prompt, max_tokens, temperature)
 
 # Test function

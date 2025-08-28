@@ -1,0 +1,151 @@
+.holo-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #1a2332 60%, #22304a 100%);
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+.holo-header {
+  padding: 32px 48px 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.holo-header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #fff;
+}
+.holo-sub {
+  color: #3fd2ff;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.holo-mode-status {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+.holo-mode {
+  background: #2b3a5a;
+  color: #3fd2ff;
+  padding: 4px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.holo-online {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.holo-main {
+  display: flex;
+  gap: 32px;
+  padding: 32px 48px;
+}
+.holo-left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.holo-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.holo-card {
+  background: #22304a;
+  border-radius: 18px;
+  box-shadow: 0 0 32px #3fd2ff33;
+  padding: 32px 36px;
+  margin-bottom: 16px;
+}
+.holo-card.status {
+  margin-bottom: 24px;
+}
+.holo-face-anim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0 24px 0;
+}
+.holo-ready {
+  color: #3fd2ff;
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+.holo-btn-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.holo-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+.holo-btn.neural { background: #3fd2ff; color: #1a2332; }
+.holo-btn.vision { background: #a18fff; color: #1a2332; }
+.holo-btn.audio { background: #eaf6ff; color: #1a2332; }
+.holo-btn.boost { background: #ff6b6b; color: #fff; }
+.holo-btn.config { background: #22304a; color: #3fd2ff; border: 1px solid #3fd2ff; }
+.holo-btn.reset { background: #22304a; color: #ff6b6b; border: 1px solid #ff6b6b; }
+.holo-btn:hover { opacity: 0.85; }
+.holo-status-row {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+.holo-bar {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.holo-bar.cpu { background: #3fd2ff22; color: #3fd2ff; }
+.holo-bar.memory { background: #a18fff22; color: #a18fff; }
+.holo-bar.ai { background: #ff6b6b22; color: #ff6b6b; }
+.holo-card.settings {
+  margin-top: 8px;
+}
+.holo-settings-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.holo-settings-tabs span {
+  padding: 6px 18px;
+  border-radius: 12px;
+  background: #22304a;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.holo-settings-tabs .active {
+  background: #3fd2ff;
+  color: #1a2332;
+}
+.holo-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.holo-slider-row label {
+  min-width: 90px;
+  color: #eaf6ff;
+}
+input[type="range"] {
+  accent-color: #3fd2ff;
+  width: 120px;
+}

@@ -1,0 +1,115 @@
+.hologram-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(20, 30, 50, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hologram-modal {
+  background: #1a2332;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #3fd2ff44;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  position: relative;
+  min-width: 900px;
+}
+.hologram-header {
+  position: absolute;
+  top: 24px; left: 40px;
+}
+.hologram-header h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 2rem;
+}
+.hologram-subtitle {
+  color: #3fd2ff;
+  font-size: 1rem;
+}
+.hologram-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hologram-face {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.hologram-status {
+  color: #3fd2ff;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.hologram-controls {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+.hologram-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hologram-btn.blue { background: #3fd2ff; color: #1a2332; }
+.hologram-btn.purple { background: #a18fff; color: #1a2332; }
+.hologram-btn.light { background: #eaf6ff; color: #1a2332; }
+.hologram-btn.red { background: #ff6b6b; color: #fff; }
+.hologram-btn:hover { opacity: 0.85; }
+.hologram-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hologram-card {
+  background: #22304a;
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+  box-shadow: 0 0 12px #3fd2ff22;
+}
+.bar {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.bar.cpu { background: #3fd2ff22; color: #3fd2ff; }
+.bar.memory { background: #a18fff22; color: #a18fff; }
+.bar.ai { background: #ff6b6b22; color: #ff6b6b; }
+.settings-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+.hologram-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px #ff6b6b44;
+}
+.hologram-close:hover {
+  background: #ff3b3b;
+}
